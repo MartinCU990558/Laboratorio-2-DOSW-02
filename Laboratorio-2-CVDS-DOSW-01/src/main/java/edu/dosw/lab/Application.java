@@ -1,4 +1,4 @@
-package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01;
+package edu.dosw.lab;
 
 public class Application {
 
