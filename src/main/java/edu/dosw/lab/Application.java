@@ -1,4 +1,4 @@
-package main.edu.dosw.lab;
+package edu.dosw.lab;
 
 
 public class Application {
