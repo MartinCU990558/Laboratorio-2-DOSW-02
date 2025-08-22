@@ -9,4 +9,6 @@ public abstract class Cliente {
     public String getTipo() {
         return tipo;
     }
+
+    public abstract double calcularDescuento(double subtotal);
 }
