@@ -27,8 +27,12 @@ public class Burger implements Ingredient {
     }
 
     public void printBurger() {
-        System.out.println("Tu hamburguesa contiene:");
-        ingredients.forEach(i -> System.out.println("- " + i.getName() + " ($" + i.getPrice() + ")"));
+        System.out.println("------HAMBURGUESA PERSONALIZADA-----");
+        System.out.print("Ingredientes seleccionados: ");
+        String ingredientsList = ingredients.stream()
+                .map(Ingredient::getName)
+                .collect(java.util.stream.Collectors.joining(", "));
+        System.out.println(ingredientsList);
         System.out.println("Precio Total: $" + getPrice());
         System.out.println("-------------------------------------------");
         System.out.println("¡Disfrute su hamburguesa!");

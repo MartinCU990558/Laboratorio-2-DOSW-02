@@ -11,7 +11,7 @@ public class Bread implements Ingredient {
 
     @Override
     public String getName() {
-        return "Pan " + name;
+        return  name;
     }
 
     @Override

@@ -11,7 +11,7 @@ public class Meat implements Ingredient {
 
     @Override
     public String getName() {
-        return "Carne de " + name;
+        return  name;
     }
 
     @Override
