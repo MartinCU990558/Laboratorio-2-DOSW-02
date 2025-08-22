@@ -11,7 +11,7 @@ public class Sauce implements Ingredient {
 
     @Override
     public String getName() {
-        return "Salsa de " + name;
+        return "Salsa " + name;
     }
 
     @Override

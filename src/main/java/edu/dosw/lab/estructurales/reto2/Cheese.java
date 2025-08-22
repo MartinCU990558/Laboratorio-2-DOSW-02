@@ -11,7 +11,7 @@ public class Cheese implements Ingredient {
 
     @Override
     public String getName() {
-        return "Queso " + name;
+        return name;
     }
 
     @Override
