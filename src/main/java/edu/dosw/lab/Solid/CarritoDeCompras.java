@@ -1,7 +1,7 @@
-package edu.dosw.lab.Estructurales;
+package edu.dosw.lab.Solid;
 
 import java.util.*;
-public class CarritDeCompras {
+public class CarritoDeCompras {
     private final Map<Producto, Integer> elementos  = new HashMap<>();
 
     public void añadirProducto(Producto producto, int cantidad) {

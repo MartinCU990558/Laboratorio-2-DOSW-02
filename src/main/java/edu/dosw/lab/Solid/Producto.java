@@ -1,4 +1,4 @@
-package edu.dosw.lab.Estructurales;
+package edu.dosw.lab.Solid;
 
 public class Producto {
 
