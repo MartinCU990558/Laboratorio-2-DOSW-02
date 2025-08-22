@@ -33,7 +33,7 @@ public class saludarInvitados {
         System.out.println("Hola Invitados");
     }
     public void despedir() {
-        System.out.println("Hasta Luego Invitados")
+        System.out.println("Hasta Luego Invitados");
     }
 }
 ```
