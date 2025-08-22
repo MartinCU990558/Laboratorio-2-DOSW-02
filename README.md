@@ -9,3 +9,5 @@ feature/CharryMarlio_CepedaCarolina_PalaciosDaniel_2025-2
 ---
 ## ✅ Retos completados
 
+### reto 1: El problema de la tienda de don Pepe
+![img.png](docs/imagenes/reto1.png)
