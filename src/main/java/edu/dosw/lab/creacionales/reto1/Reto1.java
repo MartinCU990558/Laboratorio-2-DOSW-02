@@ -1,7 +1,7 @@
 package edu.dosw.lab.creacionales.reto1;
 
 public class Reto1 {
-    public static void main(String[] args) {
+    public static void ejecutar() {
         System.out.println("Bienvenido a la tienda Don Pepe!\n");
 
         Product camiseta = new Camiseta();
