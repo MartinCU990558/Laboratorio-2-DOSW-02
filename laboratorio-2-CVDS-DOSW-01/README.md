@@ -36,3 +36,7 @@ sustituidos por los de la clase superior sin ser afectados
 Lo utilizamos de manera que los animales pudieran realizar mismos metodos aplicandolos de diferente 
 manera.
 
+**metodos y atributos**
+colocamos metodos y atributos alucibos a los comportamientos y actividades que pueden realizar cada uno de los 
+objetos ya sea alimentarse o dar propinas.
+
