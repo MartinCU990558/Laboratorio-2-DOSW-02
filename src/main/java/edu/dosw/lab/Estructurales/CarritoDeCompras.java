@@ -6,6 +6,7 @@ public class CarritDeCompras {
 
     public void añadirProducto(Producto producto, int cantidad) {
         elementos.put(producto, elementos.getOrDefault(producto, 0) + cantidad);
+        System.out.println(producto.getNombre() + " " + cantidad + " unidades agregado al carrito.");
     }
 
     public double getSubtotal() {
