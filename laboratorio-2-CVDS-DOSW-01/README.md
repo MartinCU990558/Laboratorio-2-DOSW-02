@@ -25,7 +25,7 @@ Por ultimo, se añadio la clase visitante, la cual se relaciona con los animales
 y los cuidadores (dandoles propinas).
 Añadimos metodos relevantes en las interacciones de los animales.
 
-**SOLID**
+**SOLID** 
 Para implementar parte de los pilares de solid utilizamos s(responsabilidad unitaria) que cada clase tienen
 que hacer solo lo que tiene que hacer,la o(open-clouse) cerrado a modificaciones y abierto a extenciones 
 que las clases sean extendibles sin modificar lo que ya esta hecho como que llegue un nuevo animal.
