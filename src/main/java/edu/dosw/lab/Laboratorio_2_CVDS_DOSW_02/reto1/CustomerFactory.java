@@ -1,0 +1,14 @@
+package main.java.edu.dosw.lab.Laboratorio_2_CVDS_DOSW_02.reto1;
+
+public class CustomerFactory {
+
+    public static Customer createCustomer(String type) {
+        if (type.equals("frecuente")) {
+            return new FrecuentCustomer();
+        } else if (type.equals("nuevo")) {
+            return new NewCustomer();
+        } else {
+            throw new IllegalArgumentException("Tipo de cliente no valido");
+        }
+    }
+}
