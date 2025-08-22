@@ -13,6 +13,7 @@ public class CartItem {
         return product;
     }
 
+
     public int getQuantity() {
         return quantity;
     }
