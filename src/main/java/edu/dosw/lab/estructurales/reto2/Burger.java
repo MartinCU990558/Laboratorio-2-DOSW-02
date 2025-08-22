@@ -30,6 +30,8 @@ public class Burger implements Ingredient {
         System.out.println("Tu hamburguesa contiene:");
         ingredients.forEach(i -> System.out.println("- " + i.getName() + " ($" + i.getPrice() + ")"));
         System.out.println("Precio Total: $" + getPrice());
+        System.out.println("-------------------------------------------");
+        System.out.println("¡Disfrute su hamburguesa!");
     }
 }
 
