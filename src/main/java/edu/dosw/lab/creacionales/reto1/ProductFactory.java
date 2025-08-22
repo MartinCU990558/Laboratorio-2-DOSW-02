@@ -1,15 +1,15 @@
-package main.java.edu.dosw.lab.Laboratorio_2_CVDS_DOSW_02.reto1;
+package main.java.edu.dosw.lab.creacionales.reto1;
 
 public class ProductFactory {
     public static Product createProduct(String type){
-        switch (type){
-            case "Pantalón":
+        switch (type.toLowerCase()){
+            case "pantalon":
                 return new PantalonProduct();
-            case "Camiseta":
+            case "camiseta":
                 return new CamisetaProduct();
-            case "Galletas":
+            case "galletas":
                 return new GalletasProduct();
-            case "Jugo":
+            case "jugo":
                 return new JugoProduct();
             default:
                 return null;
