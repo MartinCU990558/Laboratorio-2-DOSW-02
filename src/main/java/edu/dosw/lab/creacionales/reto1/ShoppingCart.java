@@ -19,14 +19,16 @@ public class ShoppingCart {
     public void printReceipt() {
         System.out.println("\n--- RECIBO DE COMPRA ---");
         System.out.println("Cliente: " + customer.getName());
-        double subtotal = 0;
-        for (CartItem item : items) {
-            double total = item.getTotalPrice();
-            subtotal += total;
-            System.out.println("- " + item.getProduct().getName() + " - $" + (int)total);
-        }
+
+        double subtotal = items.stream()
+                .peek(item -> System.out.println("- " + item.getProduct().getName() +
+                        " - $" + (int)item.getTotalPrice()))
+                .mapToDouble(CartItem::getTotalPrice)
+                .sum();
+
         double discount = subtotal * customer.getDiscountRate();
         double total = subtotal - discount;
+
         System.out.println("\nSubtotal: $" + (int)subtotal);
         System.out.println("Descuento aplicado: $" + (int)discount);
         System.out.println("Total a pagar: $" + (int)total);
