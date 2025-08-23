@@ -136,7 +136,7 @@ class Tienda {
 }
 
 
-public class Reto3 {
+public class Reto1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Tienda tienda = new Tienda();
