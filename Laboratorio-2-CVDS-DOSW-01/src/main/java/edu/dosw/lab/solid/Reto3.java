@@ -1,7 +1,8 @@
+package edu.dosw.lab.solid;
+
 import java.sql.Array;
 import java.util.*;
 import java.util.stream.Collectors;
-
 
 class Producto {
     private String name;
@@ -135,7 +136,7 @@ class Tienda {
 }
 
 
-public class Main {
+public class Reto3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Tienda tienda = new Tienda();
