@@ -2,10 +2,12 @@ package main.java.edu.dosw.lab.creacionales.reto3;
 
 public class Bike extends Vehicle{
 
-    public Bike(Category category) {
+    public Bike(Category category, Type type) {
         super("Bicicleta",
-              20*category.getSpeedMultiplier(),
-              500000*category.getPriceMultiplier(),
+              category,
+              type,
+              20*category.getSpeedMultiplier()* type.getSpeedMultiplier(),
+              500000*category.getPriceMultiplier()* type.getPriceMultiplier(),
               "Campanilla "+category.getEquipment());
     }
 

@@ -1,9 +1,11 @@
 package main.java.edu.dosw.lab.creacionales.reto3;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class reto3 {
-
+    private static ArrayList<Vehicle> vehicles = new ArrayList<>();
     private static Scanner input = new Scanner(System.in);
 
     public static void run() {
@@ -16,6 +18,15 @@ public class reto3 {
             System.out.println("¿Desea agregar otro vehículo? (si/no): ");
             continuar = input.nextLine();
         }
+
+        printBill();
+    }
+
+    private static void printBill() {
+        IntStream.range(0, vehicles.size()).forEach(i -> {
+            System.out.println((i + 1) + ". " + "vehicle" + "\nTipo:"+vehicles.get(i).getType()+"\nCategoria:"+vehicles.get(i).getCategory()+"\nModelo:"+vehicles.get(i).getType()
+            + "Velocidad: "+ vehicles.get(i).getBaseSpeed()+"km/h\nPrecio: "+ vehicles.get(i).getBasePrice() +"\nEquipo Base: "+ vehicles.get(i).getBaseEquipment() );
+        });
     }
 
     public static void printInput() {
@@ -33,5 +44,8 @@ public class reto3 {
         System.out.println("1. Auto\n2. Bicicleta\n 3. Moto");
         System.out.println("Ingrese opción: ");
         String model = input.nextLine();
+
+        vehicles.add(ModelFactory.createModel(type, CategoryFactory.createCategory(category), TypeFactory.createModel(model) ));
+
     }
 }
