@@ -3,13 +3,17 @@ package main.java.edu.dosw.lab.creacionales.reto3;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.IntStream;
+import java.util.HashMap;
+import java.util.Map;
 
 public class reto3 {
     private static ArrayList<Vehicle> vehicles = new ArrayList<>();
     private static Scanner input = new Scanner(System.in);
+    private static Map<String, String> vehicleType = new HashMap<>();
 
     public static void run() {
         System.out.println("Bienvenido al Reino de los Vehiculos!");
+        vehicleCatalog();
         printInput();
         System.out.println("¿Desea agregar otro vehículo? (si/no): ");
         String continuar = input.nextLine();
@@ -20,6 +24,12 @@ public class reto3 {
         }
 
         printBill();
+    }
+
+    private static void vehicleCatalog() {
+        vehicleType.put("1", "1. Auto\n2. Bicicleta\n 3. Moto");
+        vehicleType.put("2", "1. Lanchas\n2. Veleros\n 3. Jet Skis");
+        vehicleType.put("3", "1. Aviones\n2. Avionetas\n 3. Helicópteros");
     }
 
     private static void printBill() {
@@ -41,7 +51,7 @@ public class reto3 {
         String category = input.nextLine();
 
         System.out.println("Seleccione el modelo del vehiculo:");
-        System.out.println("1. Auto\n2. Bicicleta\n 3. Moto");
+        System.out.println(vehicleType.get(type.strip()));
         System.out.println("Ingrese opción: ");
         String model = input.nextLine();
 
