@@ -27,9 +27,9 @@ public class reto3 {
     }
 
     private static void vehicleCatalog() {
-        vehicleType.put("1", "1. Auto\n2. Bicicleta\n 3. Moto");
-        vehicleType.put("2", "1. Lanchas\n2. Veleros\n 3. Jet Skis");
-        vehicleType.put("3", "1. Aviones\n2. Avionetas\n 3. Helicópteros");
+        vehicleType.put("1", "1. Auto\n2. Bicicleta\n3. Moto");
+        vehicleType.put("2", "1. Lanchas\n2. Veleros\n3. Jet Skis");
+        vehicleType.put("3", "1. Aviones\n2. Avionetas\n3. Helicópteros");
     }
 
     private static void printBill() {
@@ -41,12 +41,12 @@ public class reto3 {
 
     public static void printInput() {
         System.out.println("Seleccione el tipo de ");
-        System.out.println("1. Tierra\n2. Acuático\n 3. Aéreo");
+        System.out.println("1. Tierra\n2. Acuático\n3. Aéreo");
         System.out.println("Ingrese opción: ");
         String type = input.nextLine();
 
         System.out.println("Seleccione la categoría del vehiculo:");
-        System.out.println("1. Económico\n2. Lujo\n 3. Usado");
+        System.out.println("1. Económico\n2. Lujo\n3. Usado");
         System.out.println("Ingrese opción: ");
         String category = input.nextLine();
 
