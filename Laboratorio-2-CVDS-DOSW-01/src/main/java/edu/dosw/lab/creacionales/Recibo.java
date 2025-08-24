@@ -27,4 +27,7 @@ public class Recibo {
         return ingredientes.stream().map(Ingrediente::getNombre).collect(Collectors.toList());
     }
 
+    public Integer getPrecioTotal() {
+        return precioTotal;
+    }
 }

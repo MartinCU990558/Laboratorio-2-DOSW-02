@@ -3,6 +3,10 @@ package edu.dosw.lab.creacionales;
 public class Cajero {
     Recibo recibo;
 
+    public Cajero(){
+        reset();
+    }
+
     public void reset() {
         recibo = new Recibo();
     }
@@ -15,4 +19,5 @@ public class Cajero {
         recibo.setPrecioTotal();
         return recibo;
     }
+
 }
