@@ -5,8 +5,8 @@ public class Type {
     private final double speedMultiplier;
     private final double priceMultiplier;
 
-    public Type(String type, double speedMultiplier, double priceMultiplier) {
-        this.name = type;
+    public Type(String name, double speedMultiplier, double priceMultiplier) {
+        this.name = name;
         this.speedMultiplier = speedMultiplier;
         this.priceMultiplier = priceMultiplier;
     }
@@ -22,5 +22,4 @@ public class Type {
     public double getPriceMultiplier() {
         return priceMultiplier;
     }
-
 }

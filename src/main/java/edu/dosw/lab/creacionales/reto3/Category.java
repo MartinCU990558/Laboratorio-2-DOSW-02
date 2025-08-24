@@ -2,14 +2,14 @@ package main.java.edu.dosw.lab.creacionales.reto3;
 
 public class Category {
     private final String name;
-    private final double speedMultiplier;
     private final double priceMultiplier;
+    private final double speedMultiplier;
     private final String equipment;
 
-    public Category(String name, double speedMultiplier, double priceMultiplier, String equipment) {
+    public Category(String name, double priceMultiplier, double speedMultiplier, String equipment) {
         this.name = name;
-        this.speedMultiplier = speedMultiplier;
         this.priceMultiplier = priceMultiplier;
+        this.speedMultiplier = speedMultiplier;
         this.equipment = equipment;
     }
 
@@ -17,12 +17,12 @@ public class Category {
         return name;
     }
 
-    public double getSpeedMultiplier() {
-        return speedMultiplier;
-    }
-
     public double getPriceMultiplier() {
         return priceMultiplier;
+    }
+
+    public double getSpeedMultiplier() {
+        return speedMultiplier;
     }
 
     public String getEquipment() {
