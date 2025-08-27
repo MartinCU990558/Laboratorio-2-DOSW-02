@@ -1,56 +1,44 @@
 package edu.dosw.lab.creacionales.reto1;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Reto1 {
     public static void ejecutar() {
-        Customer cliente;
         Scanner scan = new Scanner(System.in);
         System.out.println("Bienvenido a la tienda Don Pepe!\n");
 
-        Product camiseta = new Camiseta();
-        Product pantalon = new Pantalon();
-        Product galletas = new Galletas();
-        Product jugo = new JugoNatural();
 
-        System.out.println("Tipo de cliente: ");
-        String clienteNombre = scan.nextLine();
+        List<Product> productos = Arrays.asList(
+                new Camiseta(),
+                new Pantalon(),
+                new Galletas(),
+                new JugoNatural()
+        );
 
-        if (clienteNombre.equals("Frequent")) {
-            cliente = new FrequentCustomer("Frequent");
-        }
-        else{
-            cliente = new NewCustomer("NewCustomer");
-        }
+        System.out.print("Tipo de cliente (Frequent/New): ");
+        String clienteNombre = scan.nextLine().trim();
+
+        Customer cliente = clienteNombre.equalsIgnoreCase("Frequent")
+                ? new FrequentCustomer("Frequent")
+                : new NewCustomer("NewCustomer");
 
         ShoppingCart carrito = new ShoppingCart(cliente);
 
-        System.out.println("Cliente: " + cliente.getName());
+        System.out.println("\nCliente: " + cliente.getName());
         System.out.println("Productos disponibles:");
-        System.out.println("  o Camiseta - $" + camiseta.getPrice());
-        System.out.println("  o Pantalón - $" + pantalon.getPrice());
-        System.out.println("  o Galletas - $" + galletas.getPrice());
-        System.out.println("  o Jugo Natural - $" + jugo.getPrice());
+        for (int i = 0; i < productos.size(); i++) {
+            Product p = productos.get(i);
+            System.out.println("  " + (i + 1) + ". " + p.getClass().getSimpleName() + " - $" + p.getPrice());
+        }
 
-        System.out.println("\nIngrese su compra:");
-
-        System.out.print("  o Camiseta (unidades): ");
-        int cantCamiseta = scan.nextInt();
-
-        System.out.print("  o Pantalón (unidades): ");
-        int cantPantalon = scan.nextInt();
-
-        System.out.print("  o Galletas (unidades): ");
-        int cantGalletas = scan.nextInt();
-
-        System.out.print("  o Jugo Natural (unidades): ");
-        int cantJugo = scan.nextInt();
-
-
-        if (cantCamiseta > 0) carrito.addItem(camiseta, cantCamiseta);
-        if (cantPantalon > 0) carrito.addItem(pantalon, cantPantalon);
-        if (cantGalletas > 0) carrito.addItem(galletas, cantGalletas);
-        if (cantJugo > 0) carrito.addItem(jugo, cantJugo);
+        System.out.println("\nIngrese su compra (0 si no desea el producto):");
+        for (Product p : productos) {
+            System.out.print("  o " + p.getClass().getSimpleName() + " (unidades): ");
+            int cantidad = scan.nextInt();
+            if (cantidad > 0) {
+                carrito.addItem(p, cantidad);
+            }
+        }
 
         carrito.printReceipt();
 
