@@ -1,46 +1,84 @@
-package edu.dosw.lab.estructurales;
+package main.java.edu.dosw.lab.estructurales.Reto2;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class chef_5_estrellas {
-    static int pan;
-    static int carne;
-    static int queso;
-    static int lechuga;
-    static int tomate;
-    static int salsa_especial;
-    public String agregar_nuevo_ingrediente;
-    public chef_5_estrellas(int pan, int carne, int queso, int lechuga, int tomate, int salsa_especial, int agregar_nuevo_ingrediente){
-        chef_5_estrellas.pan = 3000;
-        chef_5_estrellas.carne = 10000;
-        chef_5_estrellas.queso = 5000;
-        chef_5_estrellas.tomate = 2000;
-        chef_5_estrellas.salsa_especial = 3000;
+    private List<String> ingredientes = new ArrayList<>();
+    private List<Integer> precios = new ArrayList<>();
 
-    }
-    public void recibo(){
-
-    }
-    public static void main(String[] args) {
-
-        Scanner sn = new Scanner(System.in);
-        boolean salir = false;
-        int opcion;
-
-        while(!salir){
-
-            System.out.println("1. Pan ($3.000)");
-            System.out.println("2. Carne ($10.000)");
-            System.out.println("3. Queso ($5.000)");
-            System.out.println("4. Lechuga ($2.000)");
-            System.out.println("5. Tomate ($2.000)");
-            System.out.println("6. Salsa especial ($3.000)");
-            System.out.println("7. Agregar un nuevo ingrediente");
-
-            System.out.println("Escribe una de las opciones");
-            opcion = sn.nextInt();
-
+    private static class Ingrediente {
+        String nombre;
+        int precio;
+        Ingrediente(String nombre, int precio) {
+            this.nombre = nombre;
+            this.precio = precio;
         }
+    }
+
+    private static final List<Ingrediente> INGREDIENTES = List.of(
+            new Ingrediente("Pan", 3000),
+            new Ingrediente("Carne", 10000),
+            new Ingrediente("Queso", 5000),
+            new Ingrediente("Lechuga", 2000),
+            new Ingrediente("Tomate", 2000),
+            new Ingrediente("Salsa especial", 3000)
+    );
+
+    private void agregarIngrediente(String nombre, int precio) {
+        ingredientes.add(nombre);
+        precios.add(precio);
+    }
+
+    private void Seleccion(String seleccion, Scanner scanner) {
+        for (String opcion : seleccion.split(",")) {
+            int numero = Integer.parseInt(opcion.trim());
+
+            if (numero == INGREDIENTES.size() + 1) {
+                System.out.print("Ingrese el nombre del nuevo ingrediente: ");
+                String nombre = scanner.nextLine();
+                System.out.print("Ingrese el precio del ingrediente: ");
+                int precio = Integer.parseInt(scanner.nextLine());
+                agregarIngrediente(nombre, precio);
+            } else if (numero >= 1 && numero <= INGREDIENTES.size()) {
+                Ingrediente ing = INGREDIENTES.get(numero - 1);
+                agregarIngrediente(ing.nombre, ing.precio);
+            }
+        }
+    }
+
+    private static void mostrarMenu() {
+        System.out.println("\nSeleccione ingredientes para su hamburguesa:");
+        for (int i = 0; i < INGREDIENTES.size(); i++) {
+            Ingrediente ing = INGREDIENTES.get(i);
+            System.out.printf("%d. %s ($%,d)%n", i + 1, ing.nombre, ing.precio);
+        }
+        System.out.println((INGREDIENTES.size() + 1) + ". Agregar un nuevo ingrediente");
+        System.out.print("Ingrese los números separados por coma: ");
+    }
 
 
+    private String Pedido() {
+        int total = precios.stream().mapToInt(Integer::intValue).sum();
+        return "Ingredientes seleccionados: " + String.join(", ", ingredientes) + "Precio total: $" + String.format("%,d", total);
+    }
+
+    public static void main(String[] args) {
+        Scanner sn = new Scanner(System.in);
+        System.out.println("¡Bienvenido al restaurante del Chef de 5 estrellas!");
+        System.out.println("===================================================");
+        chef_5_estrellas chef = new chef_5_estrellas();
+        mostrarMenu();
+        String seleccion = sn.nextLine();
+        chef.Seleccion(seleccion, sn);
+        if (chef.ingredientes.isEmpty()) {
+            System.out.println("No se han seleccionado ingredientes.");
+        } else {
+            System.out.println("HAMBURGUESA PERSONALIZADA");
+            System.out.println(chef.Pedido());
+            System.out.println("¡Disfrute su hamburguesa!");
+        }
+        sn.close();
     }
 }
+
