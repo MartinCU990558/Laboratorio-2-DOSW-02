@@ -1,4 +1,4 @@
-package comportamiento.Reto6;
+package edu.dosw.lab.comportamiento.Reto6;
 public class TecnicoAvanzado extends Tecnico{
     TecnicoAvanzado(String nombre){
         super(nombre, "avanzado", "alta");

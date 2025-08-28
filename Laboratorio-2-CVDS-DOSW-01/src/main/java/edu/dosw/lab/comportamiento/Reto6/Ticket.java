@@ -1,4 +1,4 @@
-package comportamiento.Reto6;
+package edu.dosw.lab.comportamiento.Reto6;
 public class Ticket {
     private static int contador = 1;
     private int numero;
