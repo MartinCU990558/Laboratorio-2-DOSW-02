@@ -12,6 +12,7 @@ public class chef_5_estrellas {
             this.precio = precio;
         }
     }
+
     private static final List<Ingrediente> INGREDIENTES = List.of(
             new Ingrediente("Pan", 3000),
             new Ingrediente("Carne", 10000),
