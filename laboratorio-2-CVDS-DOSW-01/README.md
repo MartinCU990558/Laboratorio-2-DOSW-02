@@ -72,7 +72,11 @@ interacciones dentro del zoológico.
 
 ![img.png](src/main/java/edu/dosw/lab/solid/img.png)
 
+<<<<<<< HEAD
 Se definieron cuatro clases principales:
+=======
+![img.png](src/main/java/edu/dosw/lab/solid/img.png)
+>>>>>>> mi_fork/feature/guarnizo_ramirez_arenas_2025-2
 
 **Zoo:** clase principal que representa al zoológico en general.
 
