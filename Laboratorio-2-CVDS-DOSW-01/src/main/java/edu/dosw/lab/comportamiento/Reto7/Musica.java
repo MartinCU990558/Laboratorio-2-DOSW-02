@@ -1,4 +1,4 @@
-package comportamiento.Reto7;
+package edu.dosw.lab.comportamiento.Reto7;
 
 public class Musica {
     public void reproducir() {
