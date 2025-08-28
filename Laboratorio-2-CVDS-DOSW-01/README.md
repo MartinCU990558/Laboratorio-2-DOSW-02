@@ -35,20 +35,20 @@ del resto del sistema, mejorando la mantenibilidad y reusabilidad.
 ## Cómo Lo aplicamos
 Implementamos una interfaz `DescuentoStrategy` con métodos como `getPorcentaje()` para definir el comportamiento de descuento. Clases concretas como `DescuentoNuevo` (5%) y `DescuentoFrecuente` (10%) implementan esta interfaz. La clase `Cliente` inyecta dinámicamente la estrategia adecuada según el tipo de cliente, y `Recibo` utiliza el porcentaje devuelto por la estrategia para calcular el descuento aplicado, promoviendo polimorfismo y encapsulamiento.
 
-# Reto  - Hamburguesas Don pepe
+# Reto 2  - Hamburguesas Don pepe
 
 ## Patrón de diseño Utilizado
 Builder de los patrones creacionales
 
 ## Justificacion
-Para la realizacion de el reto 2, pensamos en el uso de Builder pues parecia 
+Para la realizacion de el reto 2, pensamos en el uso de `Builder` pues parecia 
 el patron mas adecuado para la realizacion de este reto, sin embargo durante el desarrollo del codigo e implementacion
-de la clase constructora que iba a ser Chef y la clase directora Cajero, nos percatamos de la no necesidad de esta estructura
-para poder entregar el output requerido por el reto, pues el objeto de Hamburguesa no requeria de mayor tratamiento,
+de la clase constructora que iba a ser `Chef` y la clase directora `Cajero`, nos percatamos de la no necesidad de esta estructura
+para poder entregar el output requerido por el reto, pues el objeto de `Hamburguesa` no requeria de mayor tratamiento,
 asi preferimos dejar solamente el recibo con el cual construimos los datos requeridos para el output e ignoramos la necesidad
-de una clase Hamburguesa como tal, igualmente se tomo la idea de clase directora y clase constructora concreta.Como Cajero siendo
-la clase directora asi como plantea el diseno mas acercado al patron, y Recibo como la constructora, el resultado final igualmente sigue
-los principios SOLID .
+de una clase `Hamburguesa` como tal, igualmente se tomo la idea de clase directora y clase constructora concreta.Como `Cajero` siendo
+la clase directora asi como plantea el diseno mas acercado al patron, y `Recibo` como la constructora, el resultado final igualmente sigue
+los principios `SOLID`.
 
 # Reto3 - El Reino de los Vehículos
 
@@ -76,6 +76,20 @@ los principios SOLID .
     - Clases concretas como `EconomicCategory`, `LuxuryCategory` y `UsedCategory` implementan esta interfaz, definiendo cómo cada categoría afecta los atributos y el equipamiento según el tipo de vehículo.
     - La clase `AbstractVehicle` recibe una instancia de `Category` en su constructor (inyección de dependencias), delegando la modificación de atributos y equipamiento a la categoría seleccionada.
     - Ejemplo: Un auto de lujo usa `LuxuryCategory`, que aumenta la velocidad en un 50%, la comodidad en 5 puntos, duplica el precio y añade equipamiento como GPS, Asientos de cuero, Sistema de sonido premium.
+
+# Reto 4 - Casa de Cambio de don Pepe
+
+## Patrón de diseño Utilizado
+Strategy Pattern de los patrones de comportamiento.
+
+## JUSTIFICACION
+
+Para la realización del reto 4 pensamos en basarnos un poco en `Strategy`, ya que la conversión de monedas no debía quedar dentro 
+de la clase `Transaccion`. En vez de eso, dejamos que esa lógica se manejara desde la clase `Conversor`, que es la que se encarga de 
+hacer el cambio. Aunque no llegamos a implementar varias estrategias diferentes de conversión, la idea sí se acerca al patrón porque 
+separamos las responsabilidades: `Transaccion` solo guarda y organiza la información, mientras que `Conversor` se encarga del cálculo. Al final
+no quedó un `Strategy puro`, pero sí usamos el mismo principio de dividir funciones para que el diseño fuera más limpio y fácil de extender
+más adelante.
 
 # Preguntas y Respuestas sobre Programación y Maven
 
