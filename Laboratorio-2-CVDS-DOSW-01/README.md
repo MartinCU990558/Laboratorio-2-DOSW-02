@@ -35,6 +35,20 @@ del resto del sistema, mejorando la mantenibilidad y reusabilidad.
 ## Cómo Lo aplicamos
 Implementamos una interfaz `DescuentoStrategy` con métodos como `getPorcentaje()` para definir el comportamiento de descuento. Clases concretas como `DescuentoNuevo` (5%) y `DescuentoFrecuente` (10%) implementan esta interfaz. La clase `Cliente` inyecta dinámicamente la estrategia adecuada según el tipo de cliente, y `Recibo` utiliza el porcentaje devuelto por la estrategia para calcular el descuento aplicado, promoviendo polimorfismo y encapsulamiento.
 
+# Reto  - Hamburguesas Don pepe
+
+## Patrón de diseño Utilizado
+Builder de los patrones creacionales
+
+## Justificacion
+Para la realizacion de el reto 2, pensamos en el uso de Builder pues parecia 
+el patron mas adecuado para la realizacion de este reto, sin embargo durante el desarrollo del codigo e implementacion
+de la clase constructora que iba a ser Chef y la clase directora Cajero, nos percatamos de la no necesidad de esta estructura
+para poder entregar el output requerido por el reto, pues el objeto de Hamburguesa no requeria de mayor tratamiento,
+asi preferimos dejar solamente el recibo con el cual construimos los datos requeridos para el output e ignoramos la necesidad
+de una clase Hamburguesa como tal, igualmente se tomo la idea de clase directora y clase constructora concreta.Como Cajero siendo
+la clase directora asi como plantea el diseno mas acercado al patron, y Recibo como la constructora, el resultado final igualmente sigue
+los principios SOLID .
 
 # Reto3 - El Reino de los Vehículos
 
