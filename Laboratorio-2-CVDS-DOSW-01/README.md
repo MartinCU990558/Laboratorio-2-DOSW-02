@@ -1,0 +1,182 @@
+# Laboratorio 02 - SOLID, Patrones de Diseño y UML
+
+**Integrantes**
+-Maria Belen Quintero Aldana
+-Nikolas Martinez Rivera
+-Juan Pablo Contreras
+
+**Nombre de la rama**
+'feature/Quintero_Martinez_Contreras_2025-2'
+
+
+___
+
+## Retos Completados :D
+
+# Reto 1 - Tienda Don Pepe
+
+---
+
+## Patrón de diseño Utilizado
+Strategy Pattern de los patrones de comportamiento.
+
+---
+
+## Justificación
+Elegimos el Strategy Pattern para manejar de forma
+flexible y extensible los diferentes tipos de
+descuentos según el tipo de cliente (nuevo o frecuente).
+Esto permite añadir nuevos tipos de descuentos
+en un futuro sin modificar el código existente,
+alineándose con el principio Open-Closed.
+Además, separa la lógica de cálculo del descuento
+del resto del sistema, mejorando la mantenibilidad y reusabilidad.
+
+## Cómo Lo aplicamos
+Implementamos una interfaz `DescuentoStrategy` con métodos como `getPorcentaje()` para definir el comportamiento de descuento. Clases concretas como `DescuentoNuevo` (5%) y `DescuentoFrecuente` (10%) implementan esta interfaz. La clase `Cliente` inyecta dinámicamente la estrategia adecuada según el tipo de cliente, y `Recibo` utiliza el porcentaje devuelto por la estrategia para calcular el descuento aplicado, promoviendo polimorfismo y encapsulamiento.
+
+# Reto 2  - Hamburguesas Don pepe
+
+## Patrón de diseño Utilizado
+Builder de los patrones creacionales
+
+## Justificacion
+Para la realizacion de el reto 2, pensamos en el uso de `Builder` pues parecia 
+el patron mas adecuado para la realizacion de este reto, sin embargo durante el desarrollo del codigo e implementacion
+de la clase constructora que iba a ser `Chef` y la clase directora `Cajero`, nos percatamos de la no necesidad de esta estructura
+para poder entregar el output requerido por el reto, pues el objeto de `Hamburguesa` no requeria de mayor tratamiento,
+asi preferimos dejar solamente el recibo con el cual construimos los datos requeridos para el output e ignoramos la necesidad
+de una clase `Hamburguesa` como tal, igualmente se tomo la idea de clase directora y clase constructora concreta.Como `Cajero` siendo
+la clase directora asi como plantea el diseno mas acercado al patron, y `Recibo` como la constructora, el resultado final igualmente sigue
+los principios `SOLID`.
+
+# Reto3 - El Reino de los Vehículos
+
+---
+
+## Patrones de Diseño Utilizados
+
+### Patrón de Diseño 1
+- **Categoría**: Creacional
+- **Patrón Utilizado**: Factory Method
+- **Justificación**: El patrón Factory Method centraliza la creación de objetos vehículo facilitando la adición de nuevos tipos de vehículos sin modificar el código existente. Esto cumple con el principio Open-Closed y simplifica la creación de vehículos con categorías específicas.
+- **Cómo lo aplicamos**:
+    - La clase `VehicleFactory` proporciona un método estático `createVehicle(VehicleType type, CategoryType catType)` que crea instancias de vehículos según el tipo (`VehicleType`: CAR, BIKE, etc.) y la categoría (`CategoryType`: ECONOMIC, LUXURY, USED).
+    - Usa un `switch` para mapear el tipo de vehículo a su clase concreta (`Car`, `Bike`, etc.) y la categoría a su implementación (`EconomicCategory`, `LuxuryCategory`, etc.).
+
+
+---
+
+### Patrón de Diseño 2
+- **Categoría**: Comportamiento
+- **Patrón Utilizado**: Strategy
+- **Justificación**: El patrón Strategy permite definir un conjunto de algoritmos intercambiables para modificar los atributos de los vehículos (velocidad máxima, comodidad, precio y equipamiento) según la categoría (Económico, Lujo, Usado). Esto evita la duplicación de código.
+- **Cómo lo aplicamos**:
+    - Se define una interfaz `Category` con métodos para obtener modificadores de velocidad (`getSpeedModifier`), comodidad (`getComfortModifier`), precio (`getPriceModifier`) y equipamiento (`modifyEquipment`).
+    - Clases concretas como `EconomicCategory`, `LuxuryCategory` y `UsedCategory` implementan esta interfaz, definiendo cómo cada categoría afecta los atributos y el equipamiento según el tipo de vehículo.
+    - La clase `AbstractVehicle` recibe una instancia de `Category` en su constructor (inyección de dependencias), delegando la modificación de atributos y equipamiento a la categoría seleccionada.
+    - Ejemplo: Un auto de lujo usa `LuxuryCategory`, que aumenta la velocidad en un 50%, la comodidad en 5 puntos, duplica el precio y añade equipamiento como GPS, Asientos de cuero, Sistema de sonido premium.
+
+# Reto 4 - Casa de Cambio de don Pepe
+
+## Patrón de diseño Utilizado
+Strategy Pattern de los patrones de comportamiento.
+
+## Justificacion
+
+Para la realización del reto 4 pensamos en basarnos un poco en `Strategy`, ya que la conversión de monedas no debía quedar dentro 
+de la clase `Transaccion`. En vez de eso, dejamos que esa lógica se manejara desde la clase `Conversor`, que es la que se encarga de 
+hacer el cambio. Aunque no llegamos a implementar varias estrategias diferentes de conversión, la idea sí se acerca al patrón porque 
+separamos las responsabilidades: `Transaccion` solo guarda y organiza la información, mientras que `Conversor` se encarga del cálculo. Al final
+no quedó un `Strategy puro`, pero sí usamos el mismo principio de dividir funciones para que el diseño fuera más limpio y fácil de extender
+más adelante.
+
+# Preguntas y Respuestas sobre Programación y Maven
+
+## 1. ¿Qué ventaja ofrece el polimorfismo en el diseño de clases frente al uso de múltiples condicionales para determinar el comportamiento de un objeto?
+
+El polimorfismo permite que diferentes clases implementen el mismo método de distintas maneras, evitando el uso de múltiples condicionales (`if` o `switch`).  
+Esto hace que el código sea más limpio, fácil de mantener y extender, además de respetar principios de diseño como **Abierto/Cerrado**.
+
+---
+
+## 2. ¿Por qué una clase inmutable puede mejorar la seguridad?
+
+Una clase inmutable no permite que sus atributos cambien después de su creación.  
+Esto aumenta la seguridad porque:
+- Evita modificaciones inesperadas de los datos.
+- Es naturalmente segura para el trabajo en múltiples hilos (*thread-safe*).
+- Garantiza consistencia en los objetos compartidos.
+
+---
+
+## 3. ¿Qué problema podría aparecer en un sistema si los atributos de las clases se mantienen públicos en lugar de privados con getters y setters controlados?
+
+- Pérdida de **encapsulación**.
+- Los datos pueden ser modificados de forma inconsistente o inválida.
+- Se rompe la capacidad de validar, controlar o proteger la lógica de acceso.  
+  En resumen: el sistema se vuelve más frágil y menos seguro.
+
+---
+
+## 4. ¿Según el principio de Abierto/Cerrado, como deberíamos modificar el sistema si queremos añadir una nueva funcionalidad sin alterar el código existente?
+
+El principio de **Abierto/Cerrado (OCP)** indica que una clase debe estar **abierta a la extensión, pero cerrada a la modificación**.  
+Esto significa que, para añadir nuevas funcionalidades, debemos hacerlo extendiendo clases existentes o implementando nuevas clases/interfaz, **sin modificar el código que ya funciona**.
+
+---
+
+## 5. ¿Por qué es importante que una clase cumpla con el Principio de única responsabilidad y qué ejemplo sencillo podrías dar donde se vulnere?
+
+Es importante porque:
+- Facilita el mantenimiento.
+- Reduce errores.
+- Hace que el sistema sea más entendible y escalable.
+
+**Ejemplo de violación:**  
+Una clase `Reporte` que:
+- Genera el contenido del reporte.
+- Lo guarda en la base de datos.
+- Lo envía por correo.
+
+→ Aquí se mezclan varias responsabilidades en una sola clase.
+
+---
+
+## 6. ¿Qué es y por qué usamos el `pom.xml`?
+
+El `pom.xml` es el archivo de configuración de un proyecto Maven.  
+Sirve para:
+- Definir dependencias externas.
+- Especificar configuración de compilación y empaquetado.
+- Gestionar versiones de librerías.
+- Automatizar tareas como compilación, pruebas, empaquetado e instalación.
+
+---
+
+## 7. ¿Qué diferencia hay entre `mvn compile`, `mvn package` y `mvn install`?
+
+- **`mvn compile`**: Compila el código fuente en bytecode (`.class`).
+- **`mvn package`**: Compila, ejecuta pruebas y empaqueta en un archivo ejecutable (`.jar` o `.war`).
+- **`mvn install`**: Realiza lo anterior y además instala el paquete en el repositorio local de Maven para que pueda ser usado por otros proyectos.
+
+---
+
+## 8. ¿Qué diferencia existe entre una interfaz y una clase abstracta?
+
+- **Interfaz**:
+    - Define un contrato (qué debe hacer una clase, pero no cómo).
+    - Todos sus métodos son públicos y abstractos por defecto (en versiones modernas puede tener métodos `default` y `static`).
+    - Una clase puede implementar múltiples interfaces.
+
+- **Clase abstracta**:
+    - Puede tener métodos abstractos y métodos implementados.
+    - Puede contener atributos y constructores.
+    - Una clase solo puede heredar de una clase abstracta.
+
+---
+
+
+
+
+
