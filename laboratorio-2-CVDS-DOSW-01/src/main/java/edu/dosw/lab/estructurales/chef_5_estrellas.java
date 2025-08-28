@@ -22,6 +22,7 @@ public class chef_5_estrellas {
             new Ingrediente("Salsa especial", 3000)
     );
 
+
     private void agregarIngrediente(String nombre, int precio) {
         ingredientes.add(nombre);
         precios.add(precio);
