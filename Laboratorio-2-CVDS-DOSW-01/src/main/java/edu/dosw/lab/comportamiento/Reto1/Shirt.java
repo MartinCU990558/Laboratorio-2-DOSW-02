@@ -1,3 +1,4 @@
+package comportamiento.Reto1;
 public class Shirt implements Product {
     @Override
     public String getName() { return "Camiseta"; }

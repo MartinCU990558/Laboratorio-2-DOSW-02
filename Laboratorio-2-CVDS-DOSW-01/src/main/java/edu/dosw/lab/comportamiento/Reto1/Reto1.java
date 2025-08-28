@@ -1,3 +1,5 @@
+package comportamiento.Reto1;
+
 import java.util.*;
 
 public class Reto1 {

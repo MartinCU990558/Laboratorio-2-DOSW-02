@@ -1,3 +1,4 @@
+package creacionales.Reto3;
 public class Plane extends AbstractVehicle {
     public Plane(Category category) {
         super("Avión", category);

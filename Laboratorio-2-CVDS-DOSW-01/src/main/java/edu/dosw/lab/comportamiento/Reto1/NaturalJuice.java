@@ -1,3 +1,4 @@
+package comportamiento.Reto1;
 public class NaturalJuice implements Product {
     @Override
     public String getName() { return "Jugo Natural"; }

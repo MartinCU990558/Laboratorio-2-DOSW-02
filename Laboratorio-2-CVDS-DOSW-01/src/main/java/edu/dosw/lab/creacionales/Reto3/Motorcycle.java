@@ -1,3 +1,4 @@
+package creacionales.Reto3;
 public class Motorcycle extends AbstractVehicle {
     public Motorcycle(Category category) {
         super("Moto", category);

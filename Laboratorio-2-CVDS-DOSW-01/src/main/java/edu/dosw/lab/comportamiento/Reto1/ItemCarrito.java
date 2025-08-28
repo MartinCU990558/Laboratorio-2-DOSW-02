@@ -1,3 +1,4 @@
+package comportamiento.Reto1;
 public class ItemCarrito {
     private Product product;
     private int cantidad;

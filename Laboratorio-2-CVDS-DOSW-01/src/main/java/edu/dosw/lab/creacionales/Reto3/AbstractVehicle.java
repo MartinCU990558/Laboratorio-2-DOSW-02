@@ -1,3 +1,4 @@
+package creacionales.Reto3;
 public abstract class AbstractVehicle implements Vehicle {
     protected final String type;
     protected double baseSpeed;

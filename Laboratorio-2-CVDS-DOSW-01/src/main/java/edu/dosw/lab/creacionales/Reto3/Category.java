@@ -1,3 +1,4 @@
+package creacionales.Reto3;
 public interface Category {
     double getSpeedModifier();
     int getComfortModifier();

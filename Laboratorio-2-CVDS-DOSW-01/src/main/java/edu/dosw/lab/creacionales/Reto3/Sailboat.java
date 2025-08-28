@@ -1,3 +1,4 @@
+package creacionales.Reto3;
 public class Sailboat extends AbstractVehicle {
     public Sailboat(Category category) {
         super("Velero", category);

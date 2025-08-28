@@ -1,3 +1,4 @@
+package creacionales.Reto3;
 public interface Vehicle {
     String getType();
     double getMaxSpeed();

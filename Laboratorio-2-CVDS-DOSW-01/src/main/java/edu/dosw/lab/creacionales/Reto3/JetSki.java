@@ -1,3 +1,4 @@
+package creacionales.Reto3;
 public class JetSki extends AbstractVehicle {
     public JetSki(Category category) {
         super("Jet Ski", category);

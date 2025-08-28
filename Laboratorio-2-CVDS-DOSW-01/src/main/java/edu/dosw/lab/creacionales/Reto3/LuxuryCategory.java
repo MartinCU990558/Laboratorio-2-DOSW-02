@@ -1,3 +1,4 @@
+package creacionales.Reto3;
 public class LuxuryCategory implements Category {
     @Override public double getSpeedModifier() { return 2.0; }
     @Override public int getComfortModifier() { return 5; }

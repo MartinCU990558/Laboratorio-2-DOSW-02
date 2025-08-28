@@ -1,3 +1,4 @@
+package comportamiento.Reto1;
 public class Cliente {
     private String Antiguedad;
     private DescuentoStrategy descuentoStrategy;

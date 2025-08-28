@@ -1,3 +1,4 @@
+package creacionales.Reto3;
 public class Boat extends AbstractVehicle {
     public Boat(Category category) {
         super("Lancha", category);

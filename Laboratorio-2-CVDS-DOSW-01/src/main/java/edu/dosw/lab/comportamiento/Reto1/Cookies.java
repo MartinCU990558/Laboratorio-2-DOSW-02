@@ -1,3 +1,4 @@
+package comportamiento.Reto1;
 public class Cookies implements Product {
     @Override
     public String getName() { return "Galletas"; }

@@ -1,3 +1,4 @@
+package creacionales.Reto3;
 public class VehicleFactory {
     public static Vehicle createVehicle(VehicleType type, CategoryType catType) {
         Category category = switch (catType) {
