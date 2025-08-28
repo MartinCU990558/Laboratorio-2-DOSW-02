@@ -82,7 +82,7 @@ los principios `SOLID`.
 ## Patrón de diseño Utilizado
 Strategy Pattern de los patrones de comportamiento.
 
-## JUSTIFICACION
+## Justificacion
 
 Para la realización del reto 4 pensamos en basarnos un poco en `Strategy`, ya que la conversión de monedas no debía quedar dentro 
 de la clase `Transaccion`. En vez de eso, dejamos que esa lógica se manejara desde la clase `Conversor`, que es la que se encarga de 
