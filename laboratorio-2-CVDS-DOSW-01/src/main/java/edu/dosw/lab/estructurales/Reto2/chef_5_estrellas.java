@@ -57,7 +57,6 @@ public class chef_5_estrellas {
         System.out.print("Ingrese los números separados por coma: ");
     }
 
-
     private String Pedido() {
         int total = precios.stream().mapToInt(Integer::intValue).sum();
         return "Ingredientes seleccionados: " + String.join(", ", ingredientes) + "Precio total: $" + String.format("%,d", total);
