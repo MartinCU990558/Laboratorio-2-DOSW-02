@@ -1,0 +1,450 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"797a91fc-cb68-44e3-bf7c-c1f67296fd43\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\",\r\n    \"assignee\": \"juancontrerasp\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/MartinCU990558/Laboratorio-2-DOSW-02\",\r\n    \"accountId\": \"73e321b1-835d-4d32-8a2f-9cab12426309\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 1\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"31w9OCq6rZXVEjB3BvdQJwdF0hw\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"feature/Quintero__Martinez__Contreras__2025-2\",\r\n    \"last_opened_file_path\": \"C:/Users/juanb/Documents/lab2doswsito/Laboratorio-2-DOSW-02\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"797a91fc-cb68-44e3-bf7c-c1f67296fd43\" name=\"Changes\" comment=\"\" />\r\n      <created>1756424233468</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1756424233468</updated>\r\n      <workItem from=\"1756424234644\" duration=\"301000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision dfa13c4eaa874529dafac341b6458a89a77cebfe)
++++ b/.idea/workspace.xml	(date 1756425048012)
+@@ -1,7 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="797a91fc-cb68-44e3-bf7c-c1f67296fd43" name="Changes" comment="" />
++    <list default="true" id="797a91fc-cb68-44e3-bf7c-c1f67296fd43" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_8_2025_18_49_[Changes]/shelved.patch" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_8_2025_18_49__Changes_.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -10,41 +16,41 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "juancontrerasp"
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;juancontrerasp&quot;
+   }
+-}]]></component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/MartinCU990558/Laboratorio-2-DOSW-02",
+-    "accountId": "73e321b1-835d-4d32-8a2f-9cab12426309"
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/MartinCU990558/Laboratorio-2-DOSW-02&quot;,
++    &quot;accountId&quot;: &quot;73e321b1-835d-4d32-8a2f-9cab12426309&quot;
+   }
+-}]]></component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 1
+-}]]></component>
++}</component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 1
++}</component>
+   <component name="ProjectId" id="31w9OCq6rZXVEjB3BvdQJwdF0hw" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "feature/Quintero__Martinez__Contreras__2025-2",
+-    "last_opened_file_path": "C:/Users/juanb/Documents/lab2doswsito/Laboratorio-2-DOSW-02",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;feature/Quintero__Martinez__Contreras__2025-2&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/juanb/Documents/lab2doswsito/Laboratorio-2-DOSW-02&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_28_8_2025_18_49__Changes_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_28_8_2025_18_49__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_28_8_2025_18_49__Changes_.xml
+new file mode 100644
+--- /dev/null	(date 1756425029741)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_28_8_2025_18_49__Changes_.xml	(date 1756425029741)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Update_at_28_8_2025_18_49_[Changes]" date="1756424940782" recycled="false" toDelete="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_8_2025_18_49_[Changes]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Update at 28/8/2025 18:49 [Changes]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_28_8_2025_18_49_[Changes]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_28_8_2025_18_49_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_28_8_2025_18_49_[Changes]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1756425029740)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_28_8_2025_18_49_[Changes]/shelved.patch	(date 1756425029740)
+@@ -0,0 +1,331 @@
++Index: Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/comportamiento/3.txt
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/comportamiento/3.txt b/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/comportamiento/3.txt
++new file mode 100644
++--- /dev/null	(date 1756424840211)
+++++ b/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/comportamiento/3.txt	(date 1756424840211)
++@@ -0,0 +1,1 @@
+++3
++\ No newline at end of file
++Index: Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/creacionales/Reto3/README.md
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/creacionales/Reto3/README.md b/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/creacionales/Reto3/README.md
++new file mode 100644
++--- /dev/null	(date 1756424840216)
+++++ b/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/creacionales/Reto3/README.md	(date 1756424840216)
++@@ -0,0 +1,27 @@
+++# Reto3 - El Reino de los Vehículos
+++
+++---
+++
+++## Patrones de Diseño Utilizados
+++
+++### Patrón de Diseño 1
+++- **Categoría**: Creacional
+++- **Patrón Utilizado**: Factory Method
+++- **Justificación**: El patrón Factory Method centraliza la creación de objetos vehículo facilitando la adición de nuevos tipos de vehículos sin modificar el código existente. Esto cumple con el principio Open-Closed y simplifica la creación de vehículos con categorías específicas.
+++- **Cómo lo aplicamos**:
+++    - La clase `VehicleFactory` proporciona un método estático `createVehicle(VehicleType type, CategoryType catType)` que crea instancias de vehículos según el tipo (`VehicleType`: CAR, BIKE, etc.) y la categoría (`CategoryType`: ECONOMIC, LUXURY, USED).
+++    - Usa un `switch` para mapear el tipo de vehículo a su clase concreta (`Car`, `Bike`, etc.) y la categoría a su implementación (`EconomicCategory`, `LuxuryCategory`, etc.).
+++
+++
+++---
+++
+++### Patrón de Diseño 2
+++- **Categoría**: Comportamiento
+++- **Patrón Utilizado**: Strategy
+++- **Justificación**: El patrón Strategy permite definir un conjunto de algoritmos intercambiables para modificar los atributos de los vehículos (velocidad máxima, comodidad, precio y equipamiento) según la categoría (Económico, Lujo, Usado). Esto evita la duplicación de código.
+++- **Cómo lo aplicamos**:
+++    - Se define una interfaz `Category` con métodos para obtener modificadores de velocidad (`getSpeedModifier`), comodidad (`getComfortModifier`), precio (`getPriceModifier`) y equipamiento (`modifyEquipment`).
+++    - Clases concretas como `EconomicCategory`, `LuxuryCategory` y `UsedCategory` implementan esta interfaz, definiendo cómo cada categoría afecta los atributos y el equipamiento según el tipo de vehículo.
+++    - La clase `AbstractVehicle` recibe una instancia de `Category` en su constructor (inyección de dependencias), delegando la modificación de atributos y equipamiento a la categoría seleccionada.
+++    - Ejemplo: Un auto de lujo usa `LuxuryCategory`, que aumenta la velocidad en un 50%, la comodidad en 5 puntos, duplica el precio y añade equipamiento como GPS, Asientos de cuero, Sistema de sonido premium.
+++
++Index: Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/comportamiento/Reto1/README.md
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/comportamiento/Reto1/README.md b/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/comportamiento/Reto1/README.md
++new file mode 100644
++--- /dev/null	(date 1756424840213)
+++++ b/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/comportamiento/Reto1/README.md	(date 1756424840213)
++@@ -0,0 +1,21 @@
+++# Reto 1 - Tienda Don Pepe
+++
+++---
+++
+++## Patrón de diseño Utilizado
+++Strategy Pattern de los patrones de comportamiento.
+++
+++---
+++
+++## Justificación
+++Elegimos el Strategy Pattern para manejar de forma
+++flexible y extensible los diferentes tipos de
+++descuentos según el tipo de cliente (nuevo o frecuente).
+++Esto permite añadir nuevos tipos de descuentos
+++en un futuro sin modificar el código existente, 
+++alineándose con el principio Open-Closed.
+++Además, separa la lógica de cálculo del descuento 
+++del resto del sistema, mejorando la mantenibilidad y reusabilidad.
+++
+++## Cómo Lo aplicamos
+++Implementamos una interfaz `DescuentoStrategy` con métodos como `getPorcentaje()` para definir el comportamiento de descuento. Clases concretas como `DescuentoNuevo` (5%) y `DescuentoFrecuente` (10%) implementan esta interfaz. La clase `Cliente` inyecta dinámicamente la estrategia adecuada según el tipo de cliente, y `Recibo` utiliza el porcentaje devuelto por la estrategia para calcular el descuento aplicado, promoviendo polimorfismo y encapsulamiento.
++\ No newline at end of file
++Index: Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Ticket.java
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>package comportamiento.Reto6;\r\npublic class Ticket {\r\n    private static int contador = 1;\r\n    private int numero;\r\n    private String descripcion;\r\n    private String nivelDificultad;\r\n    private String prioridad;\r\n    private String estado;\r\n    private String tecnicoResolvio;\r\n\r\n    public Ticket(String descripcion, String nivelDificultad, String prioridad){\r\n        this.numero = contador++;\r\n        this.descripcion = descripcion;\r\n        this.nivelDificultad = nivelDificultad;\r\n        this.prioridad = prioridad;\r\n        this.estado = \"Pendiente\";\r\n        this.tecnicoResolvio = null;\r\n    }\r\n\r\n    public String getDescripcion() {\r\n        return descripcion;\r\n    }\r\n\r\n    public String getEstado() {\r\n        return estado;\r\n    }\r\n\r\n    public String getNivelDificultad() {\r\n        return nivelDificultad;\r\n    }\r\n\r\n    public String getPrioridad() {\r\n        return prioridad;\r\n    }\r\n\r\n    public String getTecnicoResolvio() {\r\n        return tecnicoResolvio;\r\n    }\r\n\r\n    public void setEstado(String estado) {\r\n        this.estado = estado;\r\n    }\r\n\r\n    public void setTecnicoResolvio(String tecnicoResolvio) {\r\n        this.tecnicoResolvio = tecnicoResolvio;\r\n    }\r\n\r\n    public int getNumero() {\r\n        return numero;\r\n    }\r\n}
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Ticket.java b/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Ticket.java
++--- a/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Ticket.java	(revision e0d21530566c9d2b4eb437c123c3203317a8ae28)
+++++ b/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Ticket.java	(date 1756424840206)
++@@ -1,4 +1,4 @@
++-package comportamiento.Reto6;
+++package edu.dosw.lab.comportamiento.Reto6;
++ public class Ticket {
++     private static int contador = 1;
++     private int numero;
++Index: Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoAvanzado.java
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>package comportamiento.Reto6;\r\npublic class TecnicoAvanzado extends Tecnico{\r\n    TecnicoAvanzado(String nombre){\r\n        super(nombre, \"avanzado\", \"alta\");\r\n    }\r\n\r\n    @Override\r\n    protected boolean puedeResolver(Ticket ticket) {\r\n        return ticket.getNivelDificultad().equals(\"básico\") || \r\n        ticket.getNivelDificultad().equals(\"intermedio\") ||\r\n        ticket.getNivelDificultad().equals(\"avanzado\") && \r\n        prioridadPermitida(ticket.getPrioridad());\r\n    }\r\n\r\n    \r\n}\r\n
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoAvanzado.java b/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoAvanzado.java
++--- a/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoAvanzado.java	(revision e0d21530566c9d2b4eb437c123c3203317a8ae28)
+++++ b/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoAvanzado.java	(date 1756424840199)
++@@ -1,4 +1,4 @@
++-package comportamiento.Reto6;
+++package edu.dosw.lab.comportamiento.Reto6;
++ public class TecnicoAvanzado extends Tecnico{
++     TecnicoAvanzado(String nombre){
++         super(nombre, "avanzado", "alta");
++Index: Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoBasico.java
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoBasico.java b/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoBasico.java
++new file mode 100644
++--- /dev/null	(date 1756424840200)
+++++ b/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoBasico.java	(date 1756424840200)
++@@ -0,0 +1,14 @@
+++package edu.dosw.lab.comportamiento.Reto6;
+++
+++public class TecnicoBasico extends Tecnico {
+++    public TecnicoBasico(String nombre){
+++        super(nombre, "básico", "baja");
+++    }
+++
+++    @Override
+++    protected boolean puedeResolver(Ticket ticket) {
+++        return ticket.getNivelDificultad().equals("básico") && prioridadPermitida(ticket.getPrioridad());
+++    }
+++
+++    
+++}
++\ No newline at end of file
++Index: Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoIntermedio.java
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>package comportamiento.Reto6;\r\npublic class TecnicoIntermedio extends Tecnico {\r\n    public TecnicoIntermedio(String nombre){\r\n        super(nombre, \"intermedio\", \"media\");\r\n    }\r\n\r\n    @Override\r\n    protected boolean puedeResolver(Ticket ticket) {\r\n        return ticket.getNivelDificultad().equals(\"básicos\") || \r\n        ticket.getNivelDificultad().equals(\"intermedio\") && \r\n        prioridadPermitida(ticket.getPrioridad());\r\n    }\r\n}
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoIntermedio.java b/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoIntermedio.java
++--- a/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoIntermedio.java	(revision e0d21530566c9d2b4eb437c123c3203317a8ae28)
+++++ b/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoIntermedio.java	(date 1756424840203)
++@@ -1,4 +1,4 @@
++-package comportamiento.Reto6;
+++package edu.dosw.lab.comportamiento.Reto6;
++ public class TecnicoIntermedio extends Tecnico {
++     public TecnicoIntermedio(String nombre){
++         super(nombre, "intermedio", "media");
++Index: Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Tecnico.java
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Tecnico.java b/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Tecnico.java
++new file mode 100644
++--- /dev/null	(date 1756424840197)
+++++ b/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Tecnico.java	(date 1756424840197)
++@@ -0,0 +1,77 @@
+++package edu.dosw.lab.comportamiento.Reto6;
+++
+++import java.util.HashMap;
+++import java.util.Map;
+++
+++public abstract class Tecnico {
+++    protected String nivelMaximo;
+++    protected String prioridadMaxima;
+++    protected Tecnico relevo;
+++    protected String nombre;
+++    protected int ticketsResueltos = 0;
+++    protected int ticketsAtendidos = 0;
+++
+++    public Tecnico (String nombre, String nivelMaximo, String prioridadMaxima){
+++        this.nombre = nombre;
+++        this.nivelMaximo = nivelMaximo;
+++        this.prioridadMaxima = prioridadMaxima;
+++    }
+++
+++    public void setRelevo(Tecnico relevo) {
+++        this.relevo = relevo;
+++    }
+++
+++    public void atender(Ticket ticket){
+++        StringBuilder resultado = new StringBuilder("- Ticket " + ticket.getNumero() + ": ");
+++        ticketsAtendidos++;
+++        if (puedeResolver(ticket)){
+++            resolver(ticket);
+++            resultado.append("Técnico " + nombre + " resolvió el problema.");
+++        } else if (relevo != null) {
+++            resultado.append("Técnico " + nombre + " no pudo resolver. ");
+++            resultado.append(relevo.atenderCadena(ticket));
+++        } else {
+++            resultado.append("Ningún técnico disponible. Ticket pendiente de escalamiento.");
+++            ticket.setEstado("Pendiente");
+++        }
+++        System.out.println(resultado.toString());
+++    }
+++
+++    public String atenderCadena(Ticket ticket){
+++        ticketsAtendidos++;
+++        if (puedeResolver(ticket)){
+++            resolver(ticket);
+++            return "Técnico " + nombre + " resolvió el problema.";
+++        } else if (relevo != null) {
+++            return "Técnico " + nombre + " no pudo resolver. " + relevo.atenderCadena(ticket);
+++        } else {
+++            ticket.setEstado("Pendiente");
+++            return "Ningún técnico disponible. Ticket pendiente de escalamiento.";
+++        }
+++    }
+++    protected abstract boolean puedeResolver(Ticket ticket);
+++
+++    protected void resolver(Ticket ticket){
+++        ticketsResueltos++;
+++        ticket.setEstado("Resuelto");
+++        ticket.setTecnicoResolvio(nombre);
+++    }
+++
+++    protected void pasar(Ticket ticket){
+++        relevo.atender(ticket);
+++    }
+++
+++    public int getTicketsResueltos() {
+++        return ticketsResueltos;
+++    }
+++
+++    protected boolean prioridadPermitida(String prioridadTicket){
+++        Map<String, Integer> prioridadesNivel = new HashMap<>();
+++        prioridadesNivel.put("baja", 1);
+++        prioridadesNivel.put("media", 2);
+++        prioridadesNivel.put("alta", 3);
+++
+++        return prioridadesNivel.get(prioridadTicket) <= prioridadesNivel.get(prioridadMaxima);
+++    } 
+++}
+++
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"797a91fc-cb68-44e3-bf7c-c1f67296fd43\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\",\r\n    \"assignee\": \"juancontrerasp\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/MartinCU990558/Laboratorio-2-DOSW-02\",\r\n    \"accountId\": \"73e321b1-835d-4d32-8a2f-9cab12426309\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 1\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"31w9OCq6rZXVEjB3BvdQJwdF0hw\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"feature/Quintero__Martinez__Contreras__2025-2\",\r\n    \"last_opened_file_path\": \"C:/Users/juanb/Documents/lab2doswsito/Laboratorio-2-DOSW-02\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"797a91fc-cb68-44e3-bf7c-c1f67296fd43\" name=\"Changes\" comment=\"\" />\r\n      <created>1756424233468</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1756424233468</updated>\r\n      <workItem from=\"1756424234644\" duration=\"301000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/workspace.xml b/.idea/workspace.xml
++--- a/.idea/workspace.xml	(revision e0d21530566c9d2b4eb437c123c3203317a8ae28)
+++++ b/.idea/workspace.xml	(date 1756424884650)
++@@ -1,7 +1,22 @@
++ <?xml version="1.0" encoding="UTF-8"?>
++ <project version="4">
+++  <component name="AutoImportSettings">
+++    <option name="autoReloadType" value="SELECTIVE" />
+++  </component>
++   <component name="ChangeListManager">
++-    <list default="true" id="797a91fc-cb68-44e3-bf7c-c1f67296fd43" name="Changes" comment="" />
+++    <list default="true" id="797a91fc-cb68-44e3-bf7c-c1f67296fd43" name="Changes" comment="">
+++      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Tecnico.java" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoBasico.java" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/comportamiento/3.txt" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/comportamiento/Reto1/README.md" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/creacionales/Reto3/README.md" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/estructurales/3.txt" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/util/3.txt" afterDir="false" />
+++      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoAvanzado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoAvanzado.java" afterDir="false" />
+++      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoIntermedio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoIntermedio.java" afterDir="false" />
+++      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Ticket.java" afterDir="false" />
+++    </list>
++     <option name="SHOW_DIALOG" value="false" />
++     <option name="HIGHLIGHT_CONFLICTS" value="true" />
++     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++@@ -35,7 +50,7 @@
++     "ModuleVcsDetector.initialDetectionPerformed": "true",
++     "RunOnceActivity.ShowReadmeOnStart": "true",
++     "RunOnceActivity.git.unshallow": "true",
++-    "git-widget-placeholder": "feature/Quintero__Martinez__Contreras__2025-2",
+++    "git-widget-placeholder": "Merging feature/Quintero__Martinez__Contreras__2025-2",
++     "last_opened_file_path": "C:/Users/juanb/Documents/lab2doswsito/Laboratorio-2-DOSW-02",
++     "node.js.detected.package.eslint": "true",
++     "node.js.detected.package.tslint": "true",
++@@ -60,7 +75,7 @@
++       <option name="number" value="Default" />
++       <option name="presentableId" value="Default" />
++       <updated>1756424233468</updated>
++-      <workItem from="1756424234644" duration="301000" />
+++      <workItem from="1756424234644" duration="644000" />
++     </task>
++     <servers />
++   </component>
++Index: Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/util/3.txt
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/util/3.txt b/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/util/3.txt
++new file mode 100644
++--- /dev/null	(date 1756424840219)
+++++ b/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/util/3.txt	(date 1756424840219)
++@@ -0,0 +1,1 @@
+++3
++\ No newline at end of file
++Index: .vscode/settings.json
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.vscode/settings.json b/.vscode/settings.json
++new file mode 100644
++--- /dev/null	(date 1756424840196)
+++++ b/.vscode/settings.json	(date 1756424840196)
++@@ -0,0 +1,3 @@
+++{
+++    "java.configuration.updateBuildConfiguration": "interactive"
+++}
++\ No newline at end of file
++Index: Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/estructurales/3.txt
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/estructurales/3.txt b/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/estructurales/3.txt
++new file mode 100644
++--- /dev/null	(date 1756424840217)
+++++ b/Laboratorio-2-CVDS-DOSW-01/target/classes/edu/dosw/lab/estructurales/3.txt	(date 1756424840217)
++@@ -0,0 +1,1 @@
+++3
++\ No newline at end of file

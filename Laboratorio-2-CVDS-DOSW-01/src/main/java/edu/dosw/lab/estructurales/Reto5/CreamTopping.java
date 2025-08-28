@@ -1,3 +1,4 @@
+package estructurales.Reto5;
 public class CreamTopping extends ToppingDecorator {
     public CreamTopping(Beverage beverage) {
         super(beverage);

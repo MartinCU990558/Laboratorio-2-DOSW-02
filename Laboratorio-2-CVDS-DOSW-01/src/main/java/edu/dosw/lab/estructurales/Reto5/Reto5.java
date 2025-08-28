@@ -1,3 +1,4 @@
+package estructurales.Reto5;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.IntStream;

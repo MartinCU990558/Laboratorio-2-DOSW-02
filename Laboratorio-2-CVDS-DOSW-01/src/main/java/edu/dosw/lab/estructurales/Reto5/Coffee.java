@@ -1,3 +1,4 @@
+package estructurales.Reto5;
 public class Coffee implements Beverage{
     @Override
     public int getCost() {
