@@ -112,6 +112,8 @@ El diseño asegura que los tickets se gestionen de forma escalonada y flexible, 
 
 ![img_5.png](img_5.png)
 
+![img_6.png](img_6.png)
+
 ---
 
 #### **7. RETO #7: El control remoto Mágico**
@@ -144,4 +146,5 @@ Se incluyen las siguientes entidades principales:
 - **SRP (Single Responsibility Principle):** cada clase tiene un rol claro en el sistema (representar animales, personas o funciones específicas).
 - **LSP (Liskov Substitution Principle):** cualquier subtipo de `Animal` puede sustituir a la clase base sin afectar la funcionalidad.
 
-Este diagrama facilita la comprensión de las relaciones jerárquicas y las responsabilidades de cada entidad dentro del sistema del zoológico.
+El diagrama facilita la comprensión de las relaciones jerárquicas y las responsabilidades de cada entidad dentro del sistema del zoológico.
+(el diagrama esta en la carpeta correspondiente de docs)

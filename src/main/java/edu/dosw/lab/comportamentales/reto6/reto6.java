@@ -16,6 +16,31 @@ public class reto6 {
             System.out.println(ticket.getHistory());
         }
 
+        printStats(ticketsReviewed);
+
+    }
+
+    private static void printStats(ArrayList<Ticket> ticketsReviewed) {
+        int basic = 0;
+        int intermediate = 0;
+        int advanced = 0;
+
+        for(Ticket ticket : ticketsReviewed){
+            if (!ticket.getHistory().contains("resolvió")){
+                continue;
+            }
+            if(ticket.getLevel().equals("basico") ) basic++;
+            else if(ticket.getLevel().equals("intermedio")) intermediate++;
+            else advanced++;
+        }
+
+        System.out.println("Estadisticas:");
+        System.out.println("Tickets resueltos:");
+        System.out.println("Basico:"+ basic);
+        System.out.println("Intermedio:"+ intermediate);
+        System.out.println("Avanzado:"+ advanced);
+        System.out.println("Tickets no resueltos: "+  (ticketsReviewed.size() - basic - intermediate - advanced));
+
     }
 
     private static ArrayList<Ticket> sendTickets() {
