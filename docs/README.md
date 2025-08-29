@@ -12,6 +12,7 @@
 
 ## Retos Completados
 
+
 ## RETO #2: El chef de 5 estrellas
 ### Evidencias
 ![img.png](img.png)
@@ -21,6 +22,49 @@ hamburguesa puede tener diferentes combinaciones de ingredientes (pan, carne, qu
 La clase HamburgerBuilder agrega ingredientes de forma encadenada y luego genera el objeto final con build(), mientras que Hamburger 
 representa el producto completo y calcula el precio con streams. Así, el patrón se ve reflejado en la flexibilidad para 
 personalizar la hamburguesa y en la claridad del proceso de construcción.
+
+---
+
+# RETO # 3 – El Reino de los Vehículos
+
+## 1) Resumen del reto
+La concesionaria **Reino de los Vehículos** vende medios de transporte **de tierra, acuáticos y aéreos**, con categorías **Económico, Lujo y Usado**.  
+Cada categoría **modifica** las características: **velocidad máxima, comodidad/equipamiento y precio**.  
+El usuario puede **elegir X vehículos** (tipo + modelo + categoría), **generarlos** y **pagar en caja**. El **total** se calcula con **Streams**.
+
+## 2) Enfoque de solución
+- **POO + SOLID:** separamos el **modelo** (vehículos y especificaciones) de la **aplicación de consola** (entrada/salida).  
+- **Especificaciones base:** cada modelo tiene velocidad, precio y equipamiento *base*.  
+- **Ajustes por categoría:** una política transforma esas especificaciones según **Económico/Lujo/Usado**.  
+- **Extensibilidad:** agregar un modelo o una categoría **no exige cambiar** las clases existentes (OCP).
+
+## 3) Patrones de diseño
+
+**Patrón de Diseño (categoría):**  
+- **Creacionales:** Abstract Factory  
+- **Comportamentales:** Strategy
+
+**Patrón Utilizado:**  
+- **Abstract Factory** para crear vehículos por **familia** (Tierra/Acuático/Aéreo) sin acoplar la app a clases concretas.  
+- **Strategy (Política de Categoría)** para ajustar velocidad, precio y equipamiento según **Económico/Lujo/Usado** sin tocar el código de los modelos.
+
+### Justificación
+- El dominio combina **familias** (tipo de vehículo) con **variantes** (categoría).  
+- **Abstract Factory** separa la construcción por familia; **Strategy** encapsula la lógica de ajustes por categoría → se cumple **SRP** y **OCP**.  
+- Agregar **nuevos modelos** o **nuevas categorías** no rompe lo existente (bajo acoplamiento).
+
+### Cómo se aplica en el código
+- **Modelo base:** `Vehiculo`, `VehiculoSimple`, `Especificaciones`.  
+- **Fábricas:** `FabricaTierra`, `FabricaAcuatico`, `FabricaAereo` implementan `FabricaVehiculos` y crean el modelo solicitado.  
+- **Políticas de categoría:** `Economico`, `Lujo`, `Usado` (implementan `PoliticaCategoria`) transforman las especificaciones base antes de instanciar el vehículo final.  
+- **Consola:** `AplicacionVehiculos` guía al usuario (tipo → categoría → modelo), agrega al **carrito** y muestra **resumen** + **total** (Streams).
+
+---
+
+## 4) Evidencias
+![Captura](docs/imagenes/Reto3.png)
+
+
 
 ### RETO #6: Habla con Soporte Técnico
 ### Evidencias
