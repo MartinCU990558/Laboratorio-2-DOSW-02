@@ -91,6 +91,104 @@ separamos las responsabilidades: `Transaccion` solo guarda y organiza la informa
 no quedó un `Strategy puro`, pero sí usamos el mismo principio de dividir funciones para que el diseño fuera más limpio y fácil de extender
 más adelante.
 
+# Reto 6 - Habla con Soporte Técnico
+
+## Patrón de Diseño
+**Comportamiento**
+
+## Patrón Utilizado
+**Chain of Responsability**
+
+## Justificación
+Elegimos el patrón Chain of Responsability para este reto de soporte técnico porque encaja perfecto con lo que necesitamos. Básicamente, los tickets pueden ir pasando solos entre los diferentes niveles de técnicos que existen sin tener que decirle al sistema quién es el que lo tiene que resolver. Además, como los técnicos tienen distintos niveles (básico, intermedio, avanzado), este patrón muestra muy bien esa jerarquía. También, en caso de que quisieramos, podríamos agregar más técnicos sin necesidad de dañar lo que ya funciona.
+
+## Como Lo aplico
+
+(Usando la página https://refactoring.guru/es para poder guiarnos)
+1. **Abstract Handler**: Corresponde a `Tecnico` y es la clase que define la estructura base. Contiene la referencia al siguiente técnico (relevo) y el método abstracto `puedeResolver()`.
+2. **Concrete Handler**: Los 3 tipos de técnicos:
+    - TecnicoBasico: Solo maneja tickets básicos con prioridad baja.
+    - TecnicoIntermedio: Maneja tickets básicos e intermedios con prioridad hasta media.
+    - TecnicoAvanzado: Maneja cualquier tipo de ticket con cualquier prioridad.
+3. **Request**: Corresponde a `Ticket`, y contiene la información del problema (descripción, nivel, prioridad) y su estado.
+4. **Client**: Corresponde a `SistemaSoporteTecnico`, y se encarga de configura la cadena Básico → Intermedio → Avanzado y de procesar los tickets.
+
+Algo de lo que nos percatamos, es que entre la salida del ticket 2 y el 4, hay una contradicción, puesto que el técnico avanzado debería ser capaz de resolver el ticket 4.
+
+
+# Reto 7 - El control remoto mágico
+
+## Patrón de Diseño
+**Comportamiento**
+
+## Patrón Utilizado
+**Command**
+
+## Justificación
+Elegimos el patrón Command para el reto 7 porque nos daba varias ventajas: 
+1. Command ofrece la posibilidad de separar el que hace la acción del que la ejecuta.
+2. El hecho de que mencionara que era necesario poder deshacer acciones, nos dio el indicio de que este era el patrón adecuado, ya que es perfecto para manejar esa función.
+3. Es fácil llevar un historial de todo lo que se ha hecho (ayuda a lo que se dijo en el segundo punto), por lo que facilitaba la impresión del historial de cambios.
+4. Brinda la facilidad de agregar más comandos sin necesidad de hacer grandes cambios, ya que, gracias a Command no hay acoplamiento.
+
+## Como Lo aplico
+
+(Usando la página https://refactoring.guru/es para poder guiarnos)
+1. **Command**: Interfaz que define `ejecutar()` y `paAtras()`.
+2. **Concrete Commands**: Las clases que implementan los comandos (AbrirPuertaCommand, AjustarVolumenCommand, EncenderLuzCommand, ReproducirMusicaCommand).
+3. **Receiver**: Los dispositivos que reciben las acciones. En este caso las clases Luz, Puerta, Musica y Volumen.
+4. **Invoker**: Sería la clase ControlRemoto.
+
+
+# Reto 8 - El Zoológico de los UML
+
+# 🧩 Patrón de Diseño
+
+- **Creacionales** → Para la creación flexible de objetos.  
+- **Comportamiento** → Para gestionar las interacciones y responsabilidades entre objetos.  
+
+---
+
+## 📌 Patrones Utilizados
+
+1. **Strategy** (Comportamiento)  
+   Aplicado en el sistema de especialización de cuidadores, donde diferentes tipos de cuidadores manejan diferentes especies de animales.  
+
+2. **Template Method** (Comportamiento)  
+   Implementado en la clase base `Animal`, que define métodos comunes que las subclases especializan.  
+
+3. **Factory** (Creacional)  
+   Utilizado para la creación de diferentes tipos de animales (`Mamífero`, `Reptil`, `Ave`).  
+
+---
+
+## ⚖️ Justificación principios SOLID
+
+### 🔹 S - Single Responsibility Principle
+- **Animal** → Gestiona datos y comportamientos básicos del animal.  
+- **Cuidador** → Maneja las responsabilidades de cuidado y gestión de animales.  
+- **Visitante** → Se enfoca en actividades de visita e interacción con el zoológico.  
+
+### 🔹 O - Open/Closed Principle (OCP)
+- **Herencia de Animal** → Clase base cerrada para modificación pero abierta para extensión.  
+- Nuevos tipos de animales (`Mamífero`, `Reptil`, `Ave`) se agregan sin modificar la clase `Animal`.  
+- Nuevas especialidades de cuidadores se implementan sin cambiar la lógica base.  
+
+### 🔹 L - Liskov Substitution Principle (LSP)
+- Subclases de `Animal` (`Mamífero`, `Reptil`, `Ave`) pueden usarse donde se espere un `Animal`.  
+- Uso de **polimorfismo** para mantener el comportamiento esperado de la clase padre.  
+
+### 🔹 I - Interface Segregation Principle (ISP)
+- Interfaces específicas → Cada clase implementa solo los métodos que necesita.  
+- Métodos especializados → Los cuidadores tienen métodos específicos para su especialidad.  
+    (Sin dependencias innecesarias)  
+
+### 🔹 D - Dependency Inversion Principle (DIP)
+- El sistema depende de la **abstracción `Animal`**, no de implementaciones concretas.  
+- **Inversión de control** → Los cuidadores trabajan con `Animals` en general, no con tipos específicos.  
+- Mayor flexibilidad → Se pueden agregar nuevos tipos sin romper el código existente.  
+
+
 # Preguntas y Respuestas sobre Programación y Maven
 
 ## 1. ¿Qué ventaja ofrece el polimorfismo en el diseño de clases frente al uso de múltiples condicionales para determinar el comportamiento de un objeto?
