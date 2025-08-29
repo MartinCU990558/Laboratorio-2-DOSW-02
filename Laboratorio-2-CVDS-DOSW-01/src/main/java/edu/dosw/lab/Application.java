@@ -17,13 +17,13 @@ public class Application {
 
         System.out.println("\nSeleccione el reto que desea ejecutar:");
         System.out.println("1. Reto1");
-        System.out.println("2. Reto2HamburguesasPepe");
+        System.out.println("2. Reto2");
         System.out.println("3. Reto3");
-        System.out.println("4. Reto4CasaDeCambioPepe");
+        System.out.println("4. Reto4");
         System.out.println("5. Reto5");
-        System.out.println("6. SistemaSoporteTecnico (Reto6)");
-        System.out.println("7. ControlRemoto (Reto7)");
-        System.out.println("0. Salir");
+        System.out.println("6. Reto6");
+        System.out.println("7. Reto7");
+        System.out.println("8. Reto8");
 
         System.out.print("👉 Ingrese un número: ");
         String input = sc.nextLine().trim();

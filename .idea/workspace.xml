@@ -5,29 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="797a91fc-cb68-44e3-bf7c-c1f67296fd43" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto1/Reto1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto1/Reto1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/SistemaSoporteTecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/SistemaSoporteTecnico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Tecnico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoAvanzado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoAvanzado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoBasico.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoBasico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoIntermedio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/TecnicoIntermedio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/comportamiento/Reto6/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/creacionales/Cajero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/creacionales/Ingrediente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/creacionales/Recibo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/creacionales/Restaurante.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/creacionales/Reto2HamburguesasPepe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/creacionales/Reto3/Reto3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/creacionales/Reto3/Reto3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/estructurales/Reto5/Reto5.java" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/estructurales/Reto5/Reto5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/solid/CasaDeCambio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/solid/Conversor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/solid/Reto1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/solid/Reto4CasaDeCambioPepe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratorio-2-CVDS-DOSW-01/src/main/java/edu/dosw/lab/solid/Transaccion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +70,7 @@
       <updated>1756424233468</updated>
       <workItem from="1756424234644" duration="301000" />
       <workItem from="1756425062912" duration="1485000" />
-      <workItem from="1756432905432" duration="1617000" />
+      <workItem from="1756432905432" duration="1734000" />
     </task>
     <servers />
   </component>
