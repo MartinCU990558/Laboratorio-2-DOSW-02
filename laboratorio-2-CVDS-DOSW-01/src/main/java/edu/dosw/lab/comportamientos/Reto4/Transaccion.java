@@ -6,7 +6,6 @@ import java.math.RoundingMode;
 import java.util.*;
 
 public class Transaccion {
-
     private final Map<String, BigDecimal> totales = new HashMap<>();
 
     public void procesarTransacciones(Scanner sc, int n) {

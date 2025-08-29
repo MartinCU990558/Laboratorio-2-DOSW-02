@@ -35,7 +35,6 @@ class Pedido {
         String lista = String.join(", ", ingredientes.stream().map(ing -> ing.nombre).toList());
         return "Ingredientes seleccionados: " + lista + "\nPrecio total: $" + String.format("%,d", total);
     }
-
     public boolean estaVacio() {
         return ingredientes.isEmpty();
     }
