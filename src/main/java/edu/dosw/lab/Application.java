@@ -13,5 +13,7 @@ public class Application {
         reto2.run();
 
         reto3.run();
+
+        reto4.run();
     }
 }
