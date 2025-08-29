@@ -1,4 +1,5 @@
 package edu.dosw.lab.Comportamiento.reto4;
 
-public class JPY extends Moneda{
+public class JPY extends Moneda {
+
 }
