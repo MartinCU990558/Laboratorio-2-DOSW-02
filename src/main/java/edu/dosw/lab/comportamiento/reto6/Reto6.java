@@ -15,6 +15,7 @@ public class Reto6 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Numero de tickets: ");
         int numTickets = scanner.nextInt();
+
         scanner.nextLine();
 
         for (int i = 0; i < numTickets; i++) {
