@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales.Reto1;
+package edu.dosw.lab.creacionales.Reto1;
 
 import java.util.Scanner;
 

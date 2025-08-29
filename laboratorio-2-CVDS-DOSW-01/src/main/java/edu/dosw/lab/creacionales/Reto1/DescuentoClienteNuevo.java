@@ -1,5 +1,4 @@
-package edu.dosw.lab.estructurales.Reto1;
-
+package edu.dosw.lab.creacionales.Reto1;
 public class DescuentoClienteNuevo implements EstrategiaDescuento{
 
     @Override

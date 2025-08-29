@@ -1,5 +1,4 @@
-package edu.dosw.lab.estructurales.Reto1;
-
+package edu.dosw.lab.creacionales.Reto1;
 public class Cliente {
     private String nombre;
     private EstrategiaDescuento estrategiaDescuento;
