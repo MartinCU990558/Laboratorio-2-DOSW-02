@@ -71,7 +71,7 @@ Construir una aplicación de consola para una tienda que:
 
 # 👨‍🍳  RETO #2: El chef de 5 estrellas
 ### Evidencias
-![img.png](img.png)
+![Reto2.png](imagenes/Reto2.png)
 
 Para este ejercicio se aplicó el patrón Builder, dado que necesitabamos uno que nos permitiera construir objetos mediante un paso a paso. Se escogió este modelo porque una 
 hamburguesa puede tener diferentes combinaciones de ingredientes (pan, carne, queso, vegetales, salsas) y no todos son obligatorios, es decir no manejamos unos parametros especificos.
@@ -185,7 +185,7 @@ El sistema debía permitir que se agregaran **nuevos toppings sin modificar la b
 
 # 🛠️ RETO #6: Habla con Soporte Técnico
 ### Evidencias
-![img_1.png](img_1.png)
+![Reto6.png](imagenes/Reto6.png)
 
 En este ejercicio utilizamos el patrón Chain of Responsibility, que se ve reflejado en la clase abstracta Technician, donde cada técnico decide si puede resolver un
 ticket; si no, lo pasa al siguiente con next.resolve(), con esto se permite que los tickets se procesen en cadena sin depender de un técnico específico.Se escogió 
