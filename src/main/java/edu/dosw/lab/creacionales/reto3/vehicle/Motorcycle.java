@@ -1,6 +1,6 @@
 package edu.dosw.lab.creacionales.reto3.vehicle;
 
-class Motorcycle extends Vehicle {
+public class Motorcycle extends Vehicle {
     public Motorcycle(String category) {
         type = "Tierra";
         model = "Moto";

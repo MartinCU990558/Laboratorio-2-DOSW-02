@@ -1,6 +1,6 @@
 package edu.dosw.lab.creacionales.reto3.vehicle;
 
-class JetSki extends Vehicle {
+public class JetSki extends Vehicle {
     public JetSki(String category) {
         type = "Acuático";
         model = "Jet Ski";

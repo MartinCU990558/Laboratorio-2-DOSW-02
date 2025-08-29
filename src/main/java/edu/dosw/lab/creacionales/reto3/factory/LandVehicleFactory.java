@@ -1,8 +1,8 @@
 package edu.dosw.lab.creacionales.reto3.factory;
 
-import edu.dosw.lab.creacionales.reto3.vehicle.Vehicle;
+import edu.dosw.lab.creacionales.reto3.vehicle.*;
 
-class LandVehicleFactory extends VehicleFactory {
+public class LandVehicleFactory extends VehicleFactory {
     @Override
     public Vehicle createVehicle(int modelOption, String category) {
         return switch (modelOption) {

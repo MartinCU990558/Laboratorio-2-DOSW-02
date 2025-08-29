@@ -1,6 +1,6 @@
 package edu.dosw.lab.creacionales.reto3.vehicle;
 
-class LightPlane extends Vehicle {
+public class LightPlane extends Vehicle {
     public LightPlane(String category) {
         type = "Aéreo";
         model = "Avioneta";

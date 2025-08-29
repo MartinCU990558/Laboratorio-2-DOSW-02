@@ -1,6 +1,6 @@
 package edu.dosw.lab.creacionales.reto3.vehicle;
 
-class Helicopter extends Vehicle {
+public class Helicopter extends Vehicle {
     public Helicopter(String category) {
         type = "Aéreo";
         model = "Helicóptero";

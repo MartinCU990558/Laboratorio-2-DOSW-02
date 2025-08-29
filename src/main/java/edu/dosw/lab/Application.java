@@ -8,5 +8,6 @@ public class Application {
         System.out.println("Proyecto Maven configurado y corriendo correctamente");
         //Reto1.ejecutar();
         Main.main(args);
+
     }
 }

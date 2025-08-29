@@ -1,11 +1,11 @@
 package edu.dosw.lab.creacionales.reto3.vehicle;
 
-class Airplane extends Vehicle {
+public class Airplane extends Vehicle {
     public Airplane(String category) {
         type = "Aéreo";
         model = "Avión";
         this.category = category;
-        equipment = "Completo";
+        equipment = "Instrumentos básicos de vuelo";
         price = switch (category) {
             case "Económico" -> 80000;
             case "Lujo" -> 120000;

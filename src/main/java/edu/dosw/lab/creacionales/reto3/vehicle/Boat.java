@@ -1,6 +1,6 @@
 package edu.dosw.lab.creacionales.reto3.vehicle;
 
-class Boat extends Vehicle {
+public class Boat extends Vehicle {
     public Boat(String category) {
         type = "Acuático";
         model = "Lancha";

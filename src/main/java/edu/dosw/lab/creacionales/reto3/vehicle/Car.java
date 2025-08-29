@@ -1,11 +1,11 @@
 package edu.dosw.lab.creacionales.reto3.vehicle;
 
-class Car extends Vehicle {
+public class Car extends Vehicle {
     public Car(String category) {
         type = "Tierra";
         model = "Auto";
         this.category = category;
-        equipment = "Básico";
+        equipment = "Aire acondicionado + GPS";
         price = switch (category) {
             case "Económico" -> 20000;
             case "Lujo" -> 40000;
