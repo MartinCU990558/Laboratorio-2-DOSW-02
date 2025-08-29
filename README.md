@@ -78,3 +78,26 @@ ejecutar, almacenar y deshacer comandos sin conocer los detalles de implementaci
 de cada acción. Esto permite desacoplar completamente al invocador de los receptores, facilitando
 la extensión del sistema con nuevos comandos sin tener que cambiar el código del control remoto.
 ![img.png](docs/imagenes/reto7.png)
+
+
+### Reto 8: El Zoológico de los UML
+![img.png](docs/imagenes/zoologico UML.png)
+Se implementan los principios SOLID, con una estructura
+que permite la extensión y el mantenimiento del sistema
+de gestión del zoológico.Nos basamos en una clase abstracta
+Animal, que funciona como un esqueleto para las especializaciones
+de las distintas especies, aplicando el principio abierto/cerrado
+al permitir añadir nuevos tipos de animales sin modificar lo ya existente.
+
+El principio de responsabilidad única se aplica en el diseño
+al tener cada clase teniendo una funcionalidad bien definida.La
+clase EstadoSalud encapsula específicamente la gestión de los estados de salud,
+mientras que las clases Cuidador y Visitante manejan sus responsabilidades
+sin solapamientos innecesarios.
+
+Respecto a los patrones de diseño, se hace uso implícitamente el patrón
+State en la clase EstadoSalud, que permite a los objetos Animal cambiar
+su comportamiento según su estado de salud actual.
+
+
+
