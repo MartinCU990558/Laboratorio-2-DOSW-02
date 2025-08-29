@@ -44,10 +44,10 @@ public class Application {
             case 5 -> Reto5.ejecutar();
             case 6 -> SistemaSoporteTecnico.ejecutar();
             case 7 -> ControlRemoto.ejecutar();
-            case 0 -> System.out.println("Saliendo...");
+            case 8 -> System.out.println("docs/uml/Reto8/zoologico.asta");
             default -> System.out.println("Opción no válida.");
         }
-
+        System.out.println("Muchas Gracias !");
         sc.close();
     }
 }
