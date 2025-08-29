@@ -53,7 +53,7 @@ public class Reto5 {
     }
 
     public static void imprimirMensaje(){
-        System.out.println("--- RESUMEN DE CAFE PERZONALIZADO ---\n");
+        System.out.println("--- RESUMEN DE CAFE PERSONALIZADO ---\n");
         for (Cafe cafe : cafes) {
 
             Integer precioCafe = cafe.getPrecio();
