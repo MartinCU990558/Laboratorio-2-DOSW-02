@@ -3,6 +3,8 @@ package main.java.edu.dosw.lab;
 import main.java.edu.dosw.lab.creacionales.reto1.reto1_Salamanca_Ariza;
 import main.java.edu.dosw.lab.creacionales.reto2.reto2;
 import main.java.edu.dosw.lab.creacionales.reto3.reto3;
+import main.java.edu.dosw.lab.creacionales.reto4.reto4;
+import main.java.edu.dosw.lab.estructurales.reto5.reto5;
 
 public class Application {
     public static void main(String[] args){
@@ -15,5 +17,6 @@ public class Application {
         reto3.run();
 
         reto4.run();
+        reto5.run();
     }
 }
