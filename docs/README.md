@@ -197,13 +197,55 @@ este patrón dado que el problema maneja distintos niveles y prioridades, por lo
 
 ## 1) Resumen del reto
 
+Se requiere implementar un sistema de control remoto mágico que permita:
+- Ejecutar acciones sobre dispositivos del hogar (luces, puertas, música y persianas)
+- Manejar parámetros específicos para cada acción
+- Registrar quién ejecuta cada acción
+- Mantener un historial completo de acciones
+- Deshacer acciones individuales
+- Mostrar un resumen de acciones y usuarios
+
 ## 2) Enfoque de solución
+
+Se implementó una solución basada en:
+- Interfaz `Comando` que define el contrato para todas las acciones
+- Clase `Dispositivo` que representa cada electrodoméstico
+- Comandos específicos para cada tipo de dispositivo
+- Sistema de historial para rastrear y deshacer acciones
+- Control centralizado mediante la clase `ControlRemoto`
 
 ## 3) Patrones de diseño
 
+### Categoría
+Patrones de Comportamiento
+
+### Patrón Utilizado
+Command y Memento
+
 ### Justificación
 
+### Justificación
+- **Command**: Permite encapsular las peticiones como objetos, facilitando:
+  - Parametrización de acciones
+  - Encolamiento de operaciones
+  - Registro del historial
+  - Implementación de operaciones deshacer
+
+- **Memento**: Permite:
+  - Capturar y restaurar el estado interno de los dispositivos
+  - Implementar la funcionalidad de deshacer sin violar la encapsulación
+
 ### Cómo se aplica en el código
+
+- **Command**:
+  - `Comando`: Interfaz que define la estructura base
+  - `ComandoLuz`, `ComandoPuerta`, `ComandoMusica`, `ComandoPersiana`: Implementaciones concretas
+  - `ControlRemoto`: Invocador que maneja la ejecución de comandos
+
+- **Memento**:
+  - Cada comando almacena el estado anterior del dispositivo
+  - Variables como `estadoAnterior`, `volumenAnterior`, `nivelAnterior`
+  - Métodos `deshacer()` restauran el estado previo
 
 ## 4) Evidencias
 
