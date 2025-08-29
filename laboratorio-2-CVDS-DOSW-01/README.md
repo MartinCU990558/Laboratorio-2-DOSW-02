@@ -15,7 +15,7 @@ feature/guarnizo_ramirez_arenas_2025-2
 Aplicando los diseños y conocimientos en diagramas, patrones, se realiza el diseño de una solución.
 para graficar el flujo de funcionamineto del zoologíco.
 
-![img.png](img.png)
+![img.png](src/main/java/edu/dosw/lab/solid/reto8/img.png)
 
 Creamos 4 clases principales, Zoo, la cual es la clase principal, alución al zoológico. Creamos la 
 interface animal, la cual tiene herencias de especies (Mamiferos, Reptiles y Aves), los cuales son 
