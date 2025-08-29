@@ -81,7 +81,7 @@ la extensión del sistema con nuevos comandos sin tener que cambiar el código d
 
 
 ### Reto 8: El Zoológico de los UML
-![img.png](docs/imagenes/zoologico UML.png)
+![img.png](docs/imagenes/zoologicoUML.png)
 Se implementan los principios SOLID, con una estructura
 que permite la extensión y el mantenimiento del sistema
 de gestión del zoológico.Nos basamos en una clase abstracta
