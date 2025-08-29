@@ -285,6 +285,58 @@ Command y Memento
 
 ---
 
+# 🦁🐒🦓 RETO #8: El Zoológico de los UML
+
+## 1) Resumen del reto
+Diseñar una aplicación para la gestión de un zoológico (**ECI Zoo**) que modele animales de diferentes especies (mamíferos, reptiles y aves), cuidadores y visitantes.  
+Se debía aplicar **POO, SOLID y patrones de diseño**, además de construir un **diagrama de clases UML** que incluyera herencia, asociaciones y métodos relevantes de interacción.
+
+---
+
+## 2) Diseño propuesto
+- **Animal**: clase padre con atributos comunes (nombre, edad, dieta, estado de salud, hábitat, etc.).  
+- **Mamífero, Reptil, Ave**: clases hijas que heredan de `Animal` para aplicar **herencia y polimorfismo**.  
+- **Cuidador**: se asocia a varios animales (1..*), con métodos de interacción como `alimentarAnimal()`, `bañarAnimal()` y `limpiarHabitat()`.  
+- **Visitante**: puede registrar favoritos (`List<Animal>`), alimentar animales, dar propinas y subir fotos.  
+- Se añadieron **atributos dinámicos** (color de pelaje, rareza, historial médico) que amplían la flexibilidad del modelo.
+
+---
+
+## 3) Aplicación de SOLID
+
+- **SRP (Responsabilidad Única):**  
+  Cada clase tiene un rol bien definido.  
+  - `Animal` solo gestiona atributos y comportamientos propios de un animal.  
+  - `Cuidador` solo modela las tareas del personal.  
+  - `Visitante` solo modela acciones de visitantes.
+
+- **OCP (Abierto/Cerrado):**  
+  El diseño permite agregar **nuevas especies** (ej. `Anfibio`, `Pez`) sin modificar la clase `Animal`, solo extendiéndola.
+
+- **LSP (Sustitución de Liskov):**  
+  Cualquier subclase de `Animal` (`Mamifero`, `Reptil`, `Ave`) puede sustituir a `Animal` en listas o asociaciones, manteniendo el comportamiento esperado.
+
+- **ISP (Segregación de Interfaces):**  
+  Se separan las responsabilidades: por ejemplo, `Visitante` no tiene métodos de cuidado (esos están en `Cuidador`).
+
+---
+
+## 4) Herencia y polimorfismo
+- **Herencia:** `Mamifero`, `Reptil`, `Ave` heredan de `Animal`.  
+- **Polimorfismo:** cualquier lista o asociación que use `Animal` puede contener instancias de sus subclases, y métodos como `getSonidoCaracteristico()` pueden comportarse distinto según la especie.
+
+---
+
+## 5) Patrón de diseño
+- se utilizo un estilo **Strategy** implícito al poder extender el sistema con nuevos comportamientos de animales sin modificar la superclase.
+
+---
+
+
+
+
+
+
 # Preguntas Iniciales
 
 **1. ¿Qué ventaja ofrece el polimorfismo en el diseño de clases frente al uso de múltiples condicionales para determinar el comportamiento de un objeto?**
