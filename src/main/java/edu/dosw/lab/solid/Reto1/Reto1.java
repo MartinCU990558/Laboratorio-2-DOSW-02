@@ -1,6 +1,7 @@
-package edu.dosw.lab.Solid;
+package edu.dosw.lab.solid.Reto1;
 
 import java.util.Scanner;
+
 
 public class Reto1 {
     public static void main(String[] args) {

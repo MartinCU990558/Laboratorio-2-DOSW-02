@@ -1,4 +1,4 @@
-package edu.dosw.lab.Solid;
+package edu.dosw.lab.solid.Reto1;
 
 public class Recibo {
     public static void imprimirRecibo(CarritoDeCompras carrito, Cliente cliente) {

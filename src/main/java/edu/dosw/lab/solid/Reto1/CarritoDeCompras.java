@@ -1,4 +1,4 @@
-package edu.dosw.lab.Solid;
+package edu.dosw.lab.solid.Reto1;
 
 import java.util.*;
 public class CarritoDeCompras {

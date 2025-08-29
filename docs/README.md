@@ -10,7 +10,62 @@
 
 ---
 
-## Retos Completados
+# Retos Completados
+
+# Reto 1 – Carrito de Compras (Descuentos por tipo de cliente)
+
+## 1) Resumen del reto
+Construir una aplicación de consola para una tienda que:
+- Permite **agregar productos** con cantidades a un **carrito**.
+- Selecciona el **tipo de cliente** (Nuevo / Frecuente) y aplica un **descuento**.
+- Imprime un **recibo** con detalle de productos, **subtotal**, **descuento** y **total**.
+
+---
+
+## 2) Enfoque de solución (cómo se diseñó)
+- **POO + separación por responsabilidades**:
+  - `Producto`: datos inmutables de un producto (nombre, precio).
+  - `CarritoDeCompras`: agrega productos/cantidades y calcula el **subtotal**.
+  - `Cliente` (abstracta) + `ClienteNuevo` / `ClienteFrecuente`: encapsulan el **cálculo de descuento**.
+  - `Recibo`: presenta la salida.
+- **Extensibilidad**: para nuevos tipos de cliente o reglas de descuento, se crean **nuevas clases** sin tocar el resto del sistema.
+
+## 3) Justificación (principios SOLID y polimorfismo)
+
+### ¿Cómo aplica cada principio SOLID?
+
+- **SRP (Responsabilidad Única):**  
+  - `Producto` solo modela datos del producto.  
+  - `CarritoDeCompras` solo gestiona ítems y calcula **subtotal**.  
+  - `Cliente` y sus subclases solo **calculan descuentos** y reportan su tipo.  
+  - `Recibo` solo **imprime** el detalle de la compra.  
+  - `Reto1` solo maneja **interacción por consola**.
+
+- **OCP (Abierto/Cerrado):**  
+  - Para agregar un **nuevo tipo de cliente** **no** se modifican clases existentes; se añade una nueva subclase de `Cliente`.  
+  - También pueden agregarse **nuevos productos** sin cambiar la lógica del carrito o del recibo.
+
+- **LSP (Sustitución de Liskov):**  
+  - Cualquier subclase de `Cliente` (`ClienteNuevo`, `ClienteFrecuente`) puede sustituir a `Cliente` sin romper el comportamiento esperado (siempre entrega un descuento válido a partir del subtotal).
+
+- **ISP (Segregación de Interfaces):**  
+  - La “interfaz” expuesta por `Cliente` (clase abstracta) es mínima y relevante: `calcularDescuento(double)` y `getTipoCliente()`. Las clases consumidoras no dependen de métodos que no necesitan.
+
+- **DIP (Inversión de Dependencias):**  
+  - El recibo y el flujo principal dependen de la **abstracción** `Cliente`, lo que permite intercambiar libremente la estrategia de descuento.
+
+### ¿Cómo se aplica el polimorfismo?
+
+- **Polimorfismo por herencia/overriding**: `ClienteNuevo` y `ClienteFrecuente` **sobrescriben** `calcularDescuento(...)`.  
+- **Uso polimórfico**: el código del recibo **no sabe** qué tipo concreto de cliente se está usando, solo invoca `cliente.calcularDescuento(subtotal)` y el método correcto se resuelve en tiempo de ejecución.  
+- **Selección en tiempo de ejecución**: en `Reto1`, según la opción del usuario, se instancia la subclase correspondiente y se trata **uniformemente** como `Cliente`.
+
+---
+
+## 4) Evidencias
+![Reto1.png](imagenes/Reto1.png)
+
+---
 
 
 ## RETO #2: El chef de 5 estrellas
@@ -76,7 +131,7 @@ El sistema debía permitir que se agregaran **nuevos toppings sin modificar la b
 
 ---
 
-## 2) Enfoque de solución (cómo se diseñó)
+## 2) Enfoque de solución
 - **Modelo POO:** se creó una **interfaz `Cafe`** con operaciones básicas: `obtenerDescripcion()` y `calcularCosto()`.  
 - **Componente base:** `CafeBase` representa el café simple, con un precio base fijo.  
 - **Decoradores:** cada topping (`Leche`, `Chocolate`, `Caramelo`, etc.) implementa la abstracción `DecoradorTopping` y agrega su propio precio + descripción.  
