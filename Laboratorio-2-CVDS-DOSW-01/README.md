@@ -13,7 +13,7 @@ ___
 
 ## 🔹 Retos Completados :D
 
-# 📘 Reto 1 - Tienda Don Pepe
+# 👴🏼 Reto 1 - Tienda Don Pepe
 
 ---
 
@@ -35,7 +35,7 @@ del resto del sistema, mejorando la mantenibilidad y reusabilidad.
 ## 🔹 Cómo Lo aplicamos
 Implementamos una interfaz `DescuentoStrategy` con métodos como `getPorcentaje()` para definir el comportamiento de descuento. Clases concretas como `DescuentoNuevo` (5%) y `DescuentoFrecuente` (10%) implementan esta interfaz. La clase `Cliente` inyecta dinámicamente la estrategia adecuada según el tipo de cliente, y `Recibo` utiliza el porcentaje devuelto por la estrategia para calcular el descuento aplicado, promoviendo polimorfismo y encapsulamiento.
 
-# 📘 Reto 2  - Hamburguesas Don pepe
+# 🍔 Reto 2  - Hamburguesas Don pepe
 
 ## 🔹 Patrón de diseño Utilizado
 Builder de los patrones creacionales
@@ -50,7 +50,7 @@ de una clase `Hamburguesa` como tal, igualmente se tomo la idea de clase directo
 la clase directora asi como plantea el diseno mas acercado al patron, y `Recibo` como la constructora, el resultado final igualmente sigue
 los principios `SOLID`.
 
-# 📘 Reto3 - El Reino de los Vehículos
+# 🚗🏰 Reto3 - El Reino de los Vehículos
 
 ---
 
@@ -77,7 +77,7 @@ los principios `SOLID`.
     - La clase `AbstractVehicle` recibe una instancia de `Category` en su constructor (inyección de dependencias), delegando la modificación de atributos y equipamiento a la categoría seleccionada.
     - Ejemplo: Un auto de lujo usa `LuxuryCategory`, que aumenta la velocidad en un 50%, la comodidad en 5 puntos, duplica el precio y añade equipamiento como GPS, Asientos de cuero, Sistema de sonido premium.
 
-# 📘 Reto 4 - Casa de Cambio de don Pepe
+# 🤑💱 Reto 4 - Casa de Cambio de don Pepe
 
 ## 🔹 Patrón de diseño Utilizado
 Strategy Pattern de los patrones de comportamiento.
@@ -91,19 +91,20 @@ separamos las responsabilidades: `Transaccion` solo guarda y organiza la informa
 no quedó un `Strategy puro`, pero sí usamos el mismo principio de dividir funciones para que el diseño fuera más limpio y fácil de extender
 más adelante.
 
-# Reto 5 - El Café Personalizado
+
+# ☕ Reto 5 - El Café Personalizado
 
 ---
 
-## Patrón Utilizado
+## 🔹 Patrón Utilizado
 Decorator de Estructurales
 
 ---
 
-## Justificación
+## 🔹 Justificación
 El patrón Decorator es ideal para este escenario porque permite agregar funcionalidades (en este caso toppings) a un objeto base (el café) de manera dinámica y flexible, sin necesidad de modificar la clase base del café. Esto cumple con el requisito del administrador de agregar nuevos toppings sin alterar el código existente. Además, evita la utilización de muchas subclases que ocurriría si se usaran herencia directa para cada combinación posible de toppings.
 
-## Cómo lo aplicamos
+## 🔹 Cómo lo aplicamos
 - Definimos una interfaz `Beverage` que representa cualquier bebida, con métodos para obtener la descripción y el costo.
 - Creamos una clase concreta `Coffee` que implementa `Beverage` como el café base.
 - Creamos una clase abstracta `ToppingDecorator` que también implementa `Beverage` y mantiene una referencia a un `Beverage` envuelto.
@@ -112,30 +113,7 @@ El patrón Decorator es ideal para este escenario porque permite agregar funcion
 - Para manejar múltiples cafés y calcular el total general, usamos una lista de `Beverage` y streams de Java para sumar los costos de manera eficiente y concisa.
 
 
-
-# Reto 5 - El Café Personalizado
-
----
-
-## Patrón Utilizado
-Decorator de Estructurales
-
----
-
-## Justificación
-El patrón Decorator es ideal para este escenario porque permite agregar funcionalidades (en este caso toppings) a un objeto base (el café) de manera dinámica y flexible, sin necesidad de modificar la clase base del café. Esto cumple con el requisito del administrador de agregar nuevos toppings sin alterar el código existente. Además, evita la utilización de muchas subclases que ocurriría si se usaran herencia directa para cada combinación posible de toppings.
-
-## Cómo lo aplicamos
-- Definimos una interfaz `Beverage` que representa cualquier bebida, con métodos para obtener la descripción y el costo.
-- Creamos una clase concreta `Coffee` que implementa `Beverage` como el café base.
-- Creamos una clase abstracta `ToppingDecorator` que también implementa `Beverage` y mantiene una referencia a un `Beverage` envuelto.
-- Para cada topping específico, extendimos `ToppingDecorator` y hacemos override a los métodos para agregar la descripción y el costo adicional al beverage envuelto.
-- En la clase principal `Reto5`, permitimos al usuario agregar toppings envolviendo el café base sucesivamente con decoradores.
-- Para manejar múltiples cafés y calcular el total general, usamos una lista de `Beverage` y streams de Java para sumar los costos de manera eficiente y concisa.
-
-
-
-# 📘 Reto 6 - Habla con Soporte Técnico
+# 📞👨🏼‍💻 Reto 6 - Habla con Soporte Técnico
 
 ## 🔹 Patrón de Diseño
 **Comportamiento**
@@ -160,7 +138,7 @@ Elegimos el patrón Chain of Responsability para este reto de soporte técnico p
 Algo de lo que nos percatamos, es que entre la salida del ticket 2 y el 4, hay una contradicción, puesto que el técnico avanzado debería ser capaz de resolver el ticket 4.
 
 
-# 📘 Reto 7 - El control remoto mágico
+# 🕹 Reto 7 - El control remoto mágico
 
 ## 🔹 Patrón de Diseño
 **Comportamiento**
@@ -184,16 +162,16 @@ Elegimos el patrón Command para el reto 7 porque nos daba varias ventajas:
 4. **Invoker**: Sería la clase ControlRemoto.
 
 
-# 📘 Reto 8 - El Zoológico de los UML
+# 🐘🦁 Reto 8 - El Zoológico de los UML
 
-# 📘 🧩 Patrón de Diseño
+# 🔹 Patrón de Diseño
 
 - **Creacionales** → Para la creación flexible de objetos.  
 - **Comportamiento** → Para gestionar las interacciones y responsabilidades entre objetos.  
 
 ---
 
-## 🔹 📌 Patrones Utilizados
+## 🔹 Patrones Utilizados
 
 1. **Strategy** (Comportamiento)  
    Aplicado en el sistema de especialización de cuidadores, donde diferentes tipos de cuidadores manejan diferentes especies de animales.  
@@ -206,7 +184,7 @@ Elegimos el patrón Command para el reto 7 porque nos daba varias ventajas:
 
 ---
 
-## 🔹 ⚖️ Justificación principios SOLID
+## 🔹 Justificación principios SOLID
 
 ### ✦ 🔹 S - Single Responsibility Principle
 - **Animal** → Gestiona datos y comportamientos básicos del animal.  
@@ -317,4 +295,7 @@ Sirve para:
     - Una clase solo puede heredar de una clase abstracta.
 
 ---
+
+
+
 
