@@ -70,4 +70,11 @@ Cómo se aplica: Se implementó una clase abstracta CurrencyConverter con una es
 - **Como lo aplicamos:** En este reto se aplico definiendo TicketHandler con los metodos handleTicket y setNext, se implementa la clase de tecnico que implementa esta interfaz para posteriormente crear los tecnicos especifcos, por otra para el hecho de que cada tecnico pueda verificar si puede manejar el ticket o si debe de pasarselo al siguiente en linea, y por ultimo los tickets se procesan a traves de la cadena y logrando saber cual tecnico resolvio el ticket. 
 
 
-### Reto 7:
+### Reto 7: El control remoto mágico
+El patrón de diseño de comportamiento Command se aplicó en este sistema
+mediante un invocador, el control remoto, que actúa entre intermediario entre el usuario
+y los receptores (electrodomésticos). El ControlRemoto es el encargado de
+ejecutar, almacenar y deshacer comandos sin conocer los detalles de implementación
+de cada acción. Esto permite desacoplar completamente al invocador de los receptores, facilitando
+la extensión del sistema con nuevos comandos sin tener que cambiar el código del control remoto.
+![img.png](docs/imagenes/reto7.png)
