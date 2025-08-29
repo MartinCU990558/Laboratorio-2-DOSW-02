@@ -1,7 +1,7 @@
 # Laboratorio 02 - SOLID, Patrones de Diseño y UML
 
 **Integrantes:**
-- lizabeth Correa
+- Elizabeth Correa
 - Juan Sebastian Ortega
 - Daniel Rodriguez
 
