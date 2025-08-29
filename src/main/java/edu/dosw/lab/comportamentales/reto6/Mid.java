@@ -1,31 +1,32 @@
-package main.java.edu.dosw.lab.comportamentales;
+package main.java.edu.dosw.lab.comportamentales.reto6;
 
 import java.util.ArrayList;
 
-public class Junior implements Technician{
+public class Mid implements Technician{
     private Technician superior;
     private String level;
-    private ArrayList<String>  specialties = new ArrayList<String>();
+    private String priority;
+    private ArrayList<String> specialties = new ArrayList<String>();
 
-    public Junior(Technician superior){
+    public Mid(Technician superior){
         this.superior = superior;
-        this.level = "basico";
+        this.level = "intermedio";
         specialties.add("problema con login");
-        specialties.add("problema con registro");
+        specialties.add("error critico en instalacion");
+        specialties.add("error critico en eliminacion");
     }
 
     public Ticket resolve(Ticket ticket) throws Exception {
-        if(ticket.getLevel().equals(this.level) &&
+        if(!ticket.getLevel().equals("avanzado") &&
            !ticket.getPriority().equals("alta") &&
-            this.specialties.contains(ticket.getDescription())){
-            ticket.setHistory(ticket.getHistory() +"Tecnico Basico resolvió el ticket.");
+           this.specialties.contains(ticket.getDescription())){
+            ticket.setHistory(ticket.getHistory() + "Tecnico Intermedio resolvió el ticket.");
             return ticket.setSolvedBy(this);
         }else{
-            ticket.setHistory(ticket.getHistory() +"Tecnico Basico no pudo resolver el ticket. ");
-            throw new Exception("Tecnico Basico no pudo resolver el ticket.");
+            ticket.setHistory(ticket.getHistory() + "Tecnico Intermedio no pudo resolver el ticket.");
+            throw new Exception("Tecnico Intermedio no pudo resolver el ticket.");
         }
     }
-
     public ArrayList<Ticket> resolveAll(ArrayList<Ticket> tickets){
         ArrayList<Ticket> ticketsReviewed = new ArrayList<Ticket>();
         for(Ticket ticket : tickets){

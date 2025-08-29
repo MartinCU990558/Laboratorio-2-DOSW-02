@@ -1,4 +1,4 @@
-package main.java.edu.dosw.lab;
+package main.java.edu.dosw.lab.comportamentales.reto4;
 
 import java.util.HashMap;
 import java.util.List;

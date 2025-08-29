@@ -1,4 +1,4 @@
-package main.java.edu.dosw.lab;
+package main.java.edu.dosw.lab.comportamentales.reto4;
 
 public class CurrencyConverter {
     private final RateProvider rateProvider;

@@ -1,6 +1,6 @@
 package main;
 
-import main.java.edu.dosw.lab.reto4;
+import main.java.edu.dosw.lab.comportamentales.reto4.reto4;
 
 public class Application {
     public static void main(String[] args){

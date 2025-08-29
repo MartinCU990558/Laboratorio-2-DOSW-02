@@ -1,4 +1,4 @@
-package main.java.edu.dosw.lab.comportamentales;
+package main.java.edu.dosw.lab.comportamentales.reto6;
 
 public class Ticket {
     private String level;

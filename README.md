@@ -25,7 +25,7 @@ La creación de instancias se centralizó en las fábricas `ProductFactory` y `C
 
 Este diseño favorece la extensibilidad de la tienda con bajo acoplamiento.
 
-![Imágen Reto Ejecución](docs/imagenes/)
+![img.png](img.png)
 
 ---
 
@@ -41,7 +41,7 @@ Cada ingrediente hereda de una clase base `Ingredient` y la clase `Hamburguesa` 
 
 El diseño facilita la construcción de hamburguesas personalizadas de forma flexible y escalable.
 
-![Imágen Reto Ejecución](docs/imagenes/)
+![img_1.png](img_1.png)
 
 ---
 
@@ -57,7 +57,7 @@ La creación se gestionó mediante fábricas `TypeFactory` y `CategoryFactory`.
 
 El diseño asegura la creación de familias de vehículos coherentes y fácilmente extensibles.
 
-![Imágen Reto Ejecución](docs/imagenes/)
+![img_2.png](img_2.png)
 
 ---
 
@@ -78,7 +78,7 @@ La clase `Transaction` representa operaciones de cambio.
 
 El diseño proporciona flexibilidad para soportar múltiples monedas y distintos mecanismos de conversión.
 
-![Imágen Reto Ejecución](docs/imagenes/)
+![img_3.png](img_3.png)
 
 ---
 
@@ -94,7 +94,7 @@ Cada adición de ingrediente no modifica la estructura principal, sino que se en
 
 Este diseño permite personalizar de manera flexible las bebidas con múltiples combinaciones de ingredientes.
 
-![Imágen Reto Ejecución](docs/imagenes/)
+![img_4.png](img_4.png)
 
 ---
 
@@ -110,15 +110,23 @@ Cada nivel de soporte tiene la capacidad de manejar un tipo de solicitud y, en c
 
 El diseño asegura que los tickets se gestionen de forma escalonada y flexible, evitando un fuerte acoplamiento entre cliente y manejador.
 
-![Imágen Reto Ejecución](docs/imagenes/)
+![img_5.png](img_5.png)
 
 ---
 
 #### **7. RETO #7: El control remoto Mágico**
 
-**En desarrollo...**
+Se implementó para la solucion del reto una interfaz commando que implementaran todos los patrones disponibles, para poder instanciarlos segun
+correspondiera a la peticion del usuario y que ellos mismos guardaran sus atributos. Asi mismo estos comandos guardaban referencias a los
+aparatos sobre los que funcionaban. Una clase control remoto ejecutaba dichos comandos despues de ser invocados por el usuario. (Se utilizo una
+factory para agilizar la creacion de comandos de acuerdo a la entrada de datos).
 
-![Imágen Reto Ejecución](docs/imagenes/)
+**Patrón de diseño aplicado:** Command. Porque las solucitudes debian guardar su informacion (quien la solicito) y la forma de deshacerse, todas
+controladas por el control magico del problema, por lo que para llevar el historial, ejecutar y deshacer se aplico este patron.
+
+**Principios SOLID utilizados:**
+- **SRP (Single Responsibility Principle):** cada comando tiene la única responsabilidad de ejecutar una accion sobre uno de los dispositivos.
+- **OCP (Open/Closed Principle):** es posible añadir nuevos comandos sin modificar la lógica existente.
 
 ---
 
@@ -137,5 +145,3 @@ Se incluyen las siguientes entidades principales:
 - **LSP (Liskov Substitution Principle):** cualquier subtipo de `Animal` puede sustituir a la clase base sin afectar la funcionalidad.
 
 Este diagrama facilita la comprensión de las relaciones jerárquicas y las responsabilidades de cada entidad dentro del sistema del zoológico.
-
-![Imágen Reto Ejecución](docs/imagenes/)

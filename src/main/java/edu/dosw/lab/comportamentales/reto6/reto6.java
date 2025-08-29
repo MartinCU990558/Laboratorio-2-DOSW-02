@@ -1,4 +1,4 @@
-package main.java.edu.dosw.lab.comportamiento;
+package main.java.edu.dosw.lab.comportamentales.reto6;
 
 import java.util.ArrayList;
 import java.util.Scanner;
