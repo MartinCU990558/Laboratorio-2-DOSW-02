@@ -5,7 +5,7 @@ import edu.dosw.lab.creacionales.reto3.vehicle.*;
 
 import java.util.*;
 
-public class Main {
+public class Reto3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         List<Vehicle> cart = new ArrayList<>();

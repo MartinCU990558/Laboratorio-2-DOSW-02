@@ -3,7 +3,7 @@ package edu.dosw.lab.estructurales.reto2;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class Main {
+public class Reto2 {
     public static void main(String[] args) {
         List<Ingredient> menu = new ArrayList<>();
         menu.add(new Bread("pan"));

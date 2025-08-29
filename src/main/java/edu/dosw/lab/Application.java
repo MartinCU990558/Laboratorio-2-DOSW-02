@@ -1,13 +1,14 @@
 package edu.dosw.lab;
 
 import edu.dosw.lab.creacionales.reto1.Reto1;
-import edu.dosw.lab.estructurales.reto2.Main;
+import edu.dosw.lab.creacionales.reto3.Reto3;
+import edu.dosw.lab.estructurales.reto2.Reto2;
 
 public class Application {
     public static void main(String[] args) {
         System.out.println("Proyecto Maven configurado y corriendo correctamente");
         //Reto1.ejecutar();
-        Main.main(args);
-
+        //Reto2.main(args);
+        Reto3.main(args);
     }
 }
