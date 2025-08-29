@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales.reto5;
+package edu.dosw.lab.estructurales.Reto5;
 
 public abstract class CafeCambiable implements Cafe {
     protected Cafe cafe;

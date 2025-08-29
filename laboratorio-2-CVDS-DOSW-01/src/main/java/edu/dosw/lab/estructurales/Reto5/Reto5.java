@@ -1,6 +1,10 @@
-package edu.dosw.lab.estructurales.reto5;
+package edu.dosw.lab.estructurales.Reto5;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 public class Reto5 {
     private static final Scanner scanner = new Scanner(System.in);

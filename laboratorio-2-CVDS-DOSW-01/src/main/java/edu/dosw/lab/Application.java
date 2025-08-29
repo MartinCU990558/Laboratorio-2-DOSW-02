@@ -6,6 +6,7 @@ import edu.dosw.lab.comportamientos.Reto7.reto7;
 import edu.dosw.lab.creacionales.Reto1.reto1;
 import edu.dosw.lab.creacionales.reto3.Reto3;
 import edu.dosw.lab.estructurales.Reto2.Reto2;
+import edu.dosw.lab.estructurales.Reto5.Reto5;
 
 public class Application {
 
@@ -17,5 +18,6 @@ public class Application {
         Reto3.iniciarPrograma();
         Reto2.iniciarPrograma();
         Reto4.iniciarPrograma();
+        Reto5.iniciarPrograma();
     }
 }

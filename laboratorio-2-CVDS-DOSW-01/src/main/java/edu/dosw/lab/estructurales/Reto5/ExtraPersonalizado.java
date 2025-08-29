@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales.reto5;
+package edu.dosw.lab.estructurales.Reto5;
 
 public class ExtraPersonalizado extends CafeCambiable {
     private String nombre;
