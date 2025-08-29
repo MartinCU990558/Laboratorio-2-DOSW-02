@@ -5,6 +5,7 @@ import main.java.edu.dosw.lab.creacionales.reto2.reto2;
 import main.java.edu.dosw.lab.creacionales.reto3.reto3;
 import main.java.edu.dosw.lab.creacionales.reto4.reto4;
 import main.java.edu.dosw.lab.estructurales.reto5.reto5;
+import main.java.edu.dosw.lab.comportamentales.reto6;
 
 public class Application {
     public static void main(String[] args){
@@ -18,5 +19,6 @@ public class Application {
 
         reto4.run();
         reto5.run();
+        reto6.run();
     }
 }
