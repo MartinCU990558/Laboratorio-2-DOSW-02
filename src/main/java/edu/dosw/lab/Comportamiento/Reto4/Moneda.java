@@ -1,4 +1,4 @@
-package edu.dosw.lab.Comportamiento.reto4;
+package edu.dosw.lab.Comportamiento.Reto4;
 
 public abstract class Moneda {
     protected double cantidad;

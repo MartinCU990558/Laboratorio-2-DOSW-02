@@ -1,9 +1,9 @@
-package edu.dosw.lab.Comportamiento.reto4;
+package edu.dosw.lab.Comportamiento.Reto4;
 
-public class USD extends Moneda {
-    public USD(double cantidad) {
+public class EUR extends Moneda {
+    public EUR(double cantidad) {
         super(cantidad);
-        this.codigo = "USD";
+        this.codigo = "EUR";
     }
 
     @Override
@@ -14,9 +14,9 @@ public class USD extends Moneda {
     @Override
     public double getTasa(String codigoDestino) {
         return switch (codigoDestino) {
-            case "EUR" -> 0.91;
-            case "JPY" -> 151.67;
-            case "COP" -> 3928.50;
+            case "USD" -> 1.10;
+            case "JPY" -> 166.84;
+            case "COP" -> 4321.35;
             default -> 1.0;
         };
     }
