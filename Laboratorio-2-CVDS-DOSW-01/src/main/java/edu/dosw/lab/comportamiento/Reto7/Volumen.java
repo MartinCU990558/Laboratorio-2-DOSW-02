@@ -1,4 +1,4 @@
-package edu.dosw.lab.comportamiento.Reto7;
+package comportamiento.Reto7;
 
 public class Volumen {
     private int nivel = 0;

@@ -1,4 +1,4 @@
-package edu.dosw.lab.comportamiento.Reto7;
+package comportamiento.Reto7;
 
 import java.util.*;
 import java.util.stream.Collectors;
