@@ -1,4 +1,4 @@
-package edu.dosw.lab.solid;
+package solid.Reto4;
 
 public class Reto4CasaDeCambioPepe {
     private static final CasaDeCambio casaDeCambio = new CasaDeCambio();

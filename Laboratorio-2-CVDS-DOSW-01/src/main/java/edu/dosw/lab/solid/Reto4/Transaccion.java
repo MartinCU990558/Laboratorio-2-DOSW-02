@@ -1,4 +1,4 @@
-package edu.dosw.lab.solid;
+package solid.Reto4;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -48,6 +48,9 @@ public class Reto5 {
                     System.out.println();
                 });
     }
+    public static void ejecutar(){
+        main(new String[]{"arg1", "arg2"});
+    }
 }
 
 

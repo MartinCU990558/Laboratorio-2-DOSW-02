@@ -1,3 +1,5 @@
+package comportamiento.Reto6;
+
 import java.util.*;
 
 public class SistemaSoporteTecnico {

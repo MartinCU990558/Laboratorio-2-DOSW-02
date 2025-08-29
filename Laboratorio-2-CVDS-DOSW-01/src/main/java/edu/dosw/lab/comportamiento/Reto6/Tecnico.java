@@ -1,4 +1,4 @@
-package edu.dosw.lab.comportamiento.Reto6;
+package comportamiento.Reto6;
 
 import java.util.HashMap;
 import java.util.Map;

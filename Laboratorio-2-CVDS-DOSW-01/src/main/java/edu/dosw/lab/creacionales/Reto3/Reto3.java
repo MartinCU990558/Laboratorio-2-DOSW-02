@@ -95,6 +95,10 @@ public class Reto3 {
         return type;
     }
 
+    public static void ejecutar(){
+        main(new String[]{"arg1", "arg2"});
+    }
+
 
 }
 

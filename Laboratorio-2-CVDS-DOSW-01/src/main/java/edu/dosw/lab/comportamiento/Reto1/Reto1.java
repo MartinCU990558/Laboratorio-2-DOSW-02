@@ -60,4 +60,7 @@ public class Reto1 {
 
         scanner.close();
     }
+    public static void ejecutar(){
+        main(new String[]{"arg1", "arg2"});
+    }
 }

@@ -1,4 +1,4 @@
-package edu.dosw.lab.comportamiento.Reto6;
+package comportamiento.Reto6;
 
 public class TecnicoBasico extends Tecnico {
     public TecnicoBasico(String nombre){

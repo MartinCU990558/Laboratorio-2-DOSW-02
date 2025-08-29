@@ -1,4 +1,4 @@
-package edu.dosw.lab.creacionales;
+package creacionales.Reto2;
 
 public class Cajero {
     Recibo recibo;
