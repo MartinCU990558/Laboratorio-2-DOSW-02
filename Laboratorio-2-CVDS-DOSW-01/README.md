@@ -41,7 +41,7 @@ Implementamos una interfaz `DescuentoStrategy` con métodos como `getPorcentaje(
 Builder de los patrones creacionales
 
 ## 🔹 Justificacion
-Para la realizacion de el reto 2, pensamos en el uso de `Builder` pues parecia
+Para la realizacion de el reto 2, pensamos en el uso de `Builder` pues parecia 
 el patron mas adecuado para la realizacion de este reto, sin embargo durante el desarrollo del codigo e implementacion
 de la clase constructora que iba a ser `Chef` y la clase directora `Cajero`, nos percatamos de la no necesidad de esta estructura
 para poder entregar el output requerido por el reto, pues el objeto de `Hamburguesa` no requeria de mayor tratamiento,
@@ -84,9 +84,9 @@ Strategy Pattern de los patrones de comportamiento.
 
 ## 🔹 Justificacion
 
-Para la realización del reto 4 pensamos en basarnos un poco en `Strategy`, ya que la conversión de monedas no debía quedar dentro
-de la clase `Transaccion`. En vez de eso, dejamos que esa lógica se manejara desde la clase `Conversor`, que es la que se encarga de
-hacer el cambio. Aunque no llegamos a implementar varias estrategias diferentes de conversión, la idea sí se acerca al patrón porque
+Para la realización del reto 4 pensamos en basarnos un poco en `Strategy`, ya que la conversión de monedas no debía quedar dentro 
+de la clase `Transaccion`. En vez de eso, dejamos que esa lógica se manejara desde la clase `Conversor`, que es la que se encarga de 
+hacer el cambio. Aunque no llegamos a implementar varias estrategias diferentes de conversión, la idea sí se acerca al patrón porque 
 separamos las responsabilidades: `Transaccion` solo guarda y organiza la información, mientras que `Conversor` se encarga del cálculo. Al final
 no quedó un `Strategy puro`, pero sí usamos el mismo principio de dividir funciones para que el diseño fuera más limpio y fácil de extender
 más adelante.
@@ -147,7 +147,7 @@ Algo de lo que nos percatamos, es que entre la salida del ticket 2 y el 4, hay u
 **Command**
 
 ## 🔹 Justificación
-Elegimos el patrón Command para el reto 7 porque nos daba varias ventajas:
+Elegimos el patrón Command para el reto 7 porque nos daba varias ventajas: 
 1. Command ofrece la posibilidad de separar el que hace la acción del que la ejecuta.
 2. El hecho de que mencionara que era necesario poder deshacer acciones, nos dio el indicio de que este era el patrón adecuado, ya que es perfecto para manejar esa función.
 3. Es fácil llevar un historial de todo lo que se ha hecho (ayuda a lo que se dijo en el segundo punto), por lo que facilitaba la impresión del historial de cambios.
@@ -166,49 +166,49 @@ Elegimos el patrón Command para el reto 7 porque nos daba varias ventajas:
 
 # 🔹 Patrón de Diseño
 
-- **Creacionales** → Para la creación flexible de objetos.
-- **Comportamiento** → Para gestionar las interacciones y responsabilidades entre objetos.
+- **Creacionales** → Para la creación flexible de objetos.  
+- **Comportamiento** → Para gestionar las interacciones y responsabilidades entre objetos.  
 
 ---
 
 ## 🔹 Patrones Utilizados
 
 1. **Strategy** (Comportamiento)  
-   Aplicado en el sistema de especialización de cuidadores, donde diferentes tipos de cuidadores manejan diferentes especies de animales.
+   Aplicado en el sistema de especialización de cuidadores, donde diferentes tipos de cuidadores manejan diferentes especies de animales.  
 
 2. **Template Method** (Comportamiento)  
-   Implementado en la clase base `Animal`, que define métodos comunes que las subclases especializan.
+   Implementado en la clase base `Animal`, que define métodos comunes que las subclases especializan.  
 
 3. **Factory** (Creacional)  
-   Utilizado para la creación de diferentes tipos de animales (`Mamífero`, `Reptil`, `Ave`).
+   Utilizado para la creación de diferentes tipos de animales (`Mamífero`, `Reptil`, `Ave`).  
 
 ---
 
 ## 🔹 Justificación principios SOLID
 
 ### ✦ 🔹 S - Single Responsibility Principle
-- **Animal** → Gestiona datos y comportamientos básicos del animal.
-- **Cuidador** → Maneja las responsabilidades de cuidado y gestión de animales.
-- **Visitante** → Se enfoca en actividades de visita e interacción con el zoológico.
+- **Animal** → Gestiona datos y comportamientos básicos del animal.  
+- **Cuidador** → Maneja las responsabilidades de cuidado y gestión de animales.  
+- **Visitante** → Se enfoca en actividades de visita e interacción con el zoológico.  
 
 ### ✦ 🔹 O - Open/Closed Principle (OCP)
-- **Herencia de Animal** → Clase base cerrada para modificación pero abierta para extensión.
-- Nuevos tipos de animales (`Mamífero`, `Reptil`, `Ave`) se agregan sin modificar la clase `Animal`.
-- Nuevas especialidades de cuidadores se implementan sin cambiar la lógica base.
+- **Herencia de Animal** → Clase base cerrada para modificación pero abierta para extensión.  
+- Nuevos tipos de animales (`Mamífero`, `Reptil`, `Ave`) se agregan sin modificar la clase `Animal`.  
+- Nuevas especialidades de cuidadores se implementan sin cambiar la lógica base.  
 
 ### ✦ 🔹 L - Liskov Substitution Principle (LSP)
-- Subclases de `Animal` (`Mamífero`, `Reptil`, `Ave`) pueden usarse donde se espere un `Animal`.
-- Uso de **polimorfismo** para mantener el comportamiento esperado de la clase padre.
+- Subclases de `Animal` (`Mamífero`, `Reptil`, `Ave`) pueden usarse donde se espere un `Animal`.  
+- Uso de **polimorfismo** para mantener el comportamiento esperado de la clase padre.  
 
 ### ✦ 🔹 I - Interface Segregation Principle (ISP)
-- Interfaces específicas → Cada clase implementa solo los métodos que necesita.
+- Interfaces específicas → Cada clase implementa solo los métodos que necesita.  
 - Métodos especializados → Los cuidadores tienen métodos específicos para su especialidad.  
-  (Sin dependencias innecesarias)
+    (Sin dependencias innecesarias)  
 
 ### ✦ 🔹 D - Dependency Inversion Principle (DIP)
-- El sistema depende de la **abstracción `Animal`**, no de implementaciones concretas.
-- **Inversión de control** → Los cuidadores trabajan con `Animals` en general, no con tipos específicos.
-- Mayor flexibilidad → Se pueden agregar nuevos tipos sin romper el código existente.
+- El sistema depende de la **abstracción `Animal`**, no de implementaciones concretas.  
+- **Inversión de control** → Los cuidadores trabajan con `Animals` en general, no con tipos específicos.  
+- Mayor flexibilidad → Se pueden agregar nuevos tipos sin romper el código existente.  
 
 
 # 📘 Preguntas y Respuestas sobre Programación y Maven
