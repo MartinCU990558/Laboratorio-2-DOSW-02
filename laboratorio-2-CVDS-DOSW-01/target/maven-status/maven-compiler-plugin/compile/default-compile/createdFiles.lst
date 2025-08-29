@@ -1,6 +1,7 @@
 edu\dosw\lab\creacionales\reto3\Auto.class
 edu\dosw\lab\creacionales\reto3\VehiculoFactory.class
 edu\dosw\lab\solid\retos_24.class
+edu\dosw\lab\creacionales\Reto4\application.class
 edu\dosw\lab\comportamientos\retos_32.class
 edu\dosw\lab\creacionales\reto3\VehiculoUsadoFactory.class
 edu\dosw\lab\creacionales\reto3\Avioneta.class
@@ -8,8 +9,12 @@ edu\dosw\lab\creacionales\reto3\Reto3.class
 edu\dosw\lab\creacionales\reto3\Bicicleta.class
 edu\dosw\lab\creacionales\reto3\VehiculoEconomicoFactory.class
 edu\dosw\lab\creacionales\reto3\Velero.class
+edu\dosw\lab\estructurales\reto5\Cafe.class
 edu\dosw\lab\creacionales\reto3\Moto.class
+edu\dosw\lab\estructurales\reto5\CafeSimple.class
 edu\dosw\lab\creacionales\reto3\JetSki.class
+edu\dosw\lab\estructurales\reto5\ExtraPersonalizado.class
+edu\dosw\lab\estructurales\reto5\CafeCambiable.class
 edu\dosw\lab\retos_42.class
 edu\dosw\lab\Application.class
 edu\dosw\lab\creacionales\reto3\Helicoptero.class
@@ -20,5 +25,6 @@ edu\dosw\lab\creacionales\reto3\VehiculoLujoFactory.class
 edu\dosw\lab\estructurales\CarritoCompras.class
 edu\dosw\lab\estructurales\MainTienda.class
 edu\dosw\lab\estructurales\Recibo.class
+edu\dosw\lab\estructurales\reto5\Reto5.class
 edu\dosw\lab\estructurales\chef_5_estrellas.class
 edu\dosw\lab\creacionales\reto3\Lancha.class
