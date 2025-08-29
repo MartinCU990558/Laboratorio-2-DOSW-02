@@ -14,6 +14,7 @@
     El principal problema es la pérdida de control sobre el estado del objeto. Cualquier parte del código puede modificar el atributo público directamente, sin ninguna validación, lo que puede llevar a que el objeto quede en un estado inconsistente o inválido (por ejemplo, asignando una edad negativa). Además, se genera un alto acoplamiento, porque si la implementación del atributo cambia (su tipo o cómo se calcula), se debe modificar todo el código que lo usa, en lugar de solo modificar un getter o setter. Esto hace el sistema mucho más frágil y difícil de mantener.
 
 
+
 4. **¿Según el principio de Abierto/Cerrado, como deberíamos modificar el sistema si queremos añadir una nueva funcionalidad sin alterar el código existente?**
 
     Para poder añadir una nueva funcionalidad siguiendo el principio sería añadiendo clases que implementen una interfaz o extiendan una clase abstracta que realicen esta nueva funcionalidad, pero por encima de eso estaria el polimorfismo ya que se puede agregar una nueva funcionalidad sin afectar el estado del sistema actual.
