@@ -196,6 +196,40 @@ y también procesa los tickets.
 Se usaron algunos patrones como el patrón Chain of Responsibility, ya que cada técnico atiende solo a los tickets
 de su nivel, y si no lo puede resolver, escala al siguiente técnico como una cadena.
 
+# Reto 7
+**Descripción**
+
+El objetivo de este reto es generar un sistema de control remoto inteligente, el cual permita manejar diferentes 
+dispositivos del hogar, como luces, puertas y música, usando el patron Command.
+
+Las opciones del usuario son:
+- Este puede definir el numero de acciones realizadas para las maquinas.
+- Puede ingresar los nombres de los usuarios que podran utilizar este sistema.
+- Selecciona el dispositivo que quiera utilizar.
+- Puede deshacer las acciones que realiza.
+- puede ver el historial de todas las acciones. 
+
+Su estructura fue:
+- **Comando:** Este define el comportamiento de todos los comandos con ooperaciones para ejecutar, deshacer, describir 
+y asociar al usuario.
+- **ComandoEncenderLuz:** Este prende o apaga la luz.
+- **ComandoAbrirPuerta:** Este permite abrir y cerrar la puerta.
+- **ComandoReproducirMusica:** Inicia y para la reproducción de musica.
+- **ComandoAjustarVolumen:** Este sube y baja el volumen de la música.
+- **Luz:** Esta clase es la que modela el estado de la luz.
+- **Puerta:** Esta clase es la que modela el estado de la puerta.
+- **Música:** Esta clase es la que modela el estado de la música
+- **Dispositivos:** Esta clase es la que agrupa todos los dispositivos del sistema.
+- **ControlRemoto:** Este gestiona la ejecucion de los comandos, permitiendo hacer o deshacer acciones, guarda el 
+historial e investiga a los usuarios.
+- **RegistroAccion:** Este almacena la información de cada acción.
+- **FabricaDeComandos:** Este es el que construye los comandos, según la opción seleccionada por el usuario.
+- **Reto7:** Esta es la clase principal donde esta el flujo de todas las acciones, gestiona la interacción con el 
+- usuario.
+
+Para este reto se uso el patrón Command, porque cada accion que queria realizar el usuario, se encapsulaba en un objeto 
+comando, el cual desacoplaba la solicitud de las acciones de su ejecución.
+
 -----
 # Reto 8
 **Descripción**
