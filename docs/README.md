@@ -12,6 +12,7 @@
 
 # Retos Completados
 
+
 # 📦 Reto 1 – Carrito de Compras (Descuentos por tipo de cliente)
 
 ## 1) Resumen del reto
@@ -119,6 +120,23 @@ El usuario puede **elegir X vehículos** (tipo + modelo + categoría), **generar
 ## 4) Evidencias
 ![Reto3.png](imagenes/Reto3.png)
 
+---
+
+# 💵 RETO #4: La Estafa de la Casa de Cambio
+
+## 1) Resumen del reto
+
+## 2) Enfoque de solución
+
+## 3) Patrones de diseño
+
+### Justificación
+
+### Cómo se aplica en el código
+
+## 4) Evidencias
+
+![Reto4.png](imagenes/Reto4.png)
 
 ----
 
@@ -173,9 +191,27 @@ En este ejercicio utilizamos el patrón Chain of Responsibility, que se ve refle
 ticket; si no, lo pasa al siguiente con next.resolve(), con esto se permite que los tickets se procesen en cadena sin depender de un técnico específico.Se escogió 
 este patrón dado que el problema maneja distintos niveles y prioridades, por lo que debería ser flexible el escoger quién resuelve cada caso, dejando los que no puedan ser atendidos como pendientes para escalar.
 
+---
 
+# 🤳 RETO #7: El control remoto Mágico
 
-## Preguntas Iniciales
+## 1) Resumen del reto
+
+## 2) Enfoque de solución
+
+## 3) Patrones de diseño
+
+### Justificación
+
+### Cómo se aplica en el código
+
+## 4) Evidencias
+
+![Reto7.png](imagenes/Reto7.png)
+
+---
+
+# Preguntas Iniciales
 
 **1. ¿Qué ventaja ofrece el polimorfismo en el diseño de clases frente al uso de múltiples condicionales para determinar el comportamiento de un objeto?**
 
