@@ -80,7 +80,7 @@ public class SistemaSoporteTecnico {
         System.out.println();
     }
 
-    public void ejecutar() {
+    public static void ejecutar() {
         SistemaSoporteTecnico ejemplSoporteTecnico = new SistemaSoporteTecnico();
 
         ejemplSoporteTecnico.agregarTicket(new Ticket("Problema con login", "básico", "baja"));

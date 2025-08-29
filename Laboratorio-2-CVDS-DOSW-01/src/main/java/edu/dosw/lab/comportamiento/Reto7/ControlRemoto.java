@@ -61,7 +61,7 @@ public class ControlRemoto {
         });
     }
 
-    public void ejecutar(){
+    public static void ejecutar(){
         ControlRemoto control = new ControlRemoto();
 
         Luz luz = new Luz();
