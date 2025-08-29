@@ -12,7 +12,7 @@
 
 # Retos Completados
 
-# Reto 1 – Carrito de Compras (Descuentos por tipo de cliente)
+# 📦 Reto 1 – Carrito de Compras (Descuentos por tipo de cliente)
 
 ## 1) Resumen del reto
 Construir una aplicación de consola para una tienda que:
@@ -68,7 +68,7 @@ Construir una aplicación de consola para una tienda que:
 ---
 
 
-## RETO #2: El chef de 5 estrellas
+# 👨‍🍳  RETO #2: El chef de 5 estrellas
 ### Evidencias
 ![img.png](img.png)
 
@@ -80,7 +80,7 @@ personalizar la hamburguesa y en la claridad del proceso de construcción.
 
 ---
 
-# RETO # 3 – El Reino de los Vehículos
+# 🚗 RETO # 3 – El Reino de los Vehículos
 
 ## 1) Resumen del reto
 La concesionaria **Reino de los Vehículos** vende medios de transporte **de tierra, acuáticos y aéreos**, con categorías **Económico, Lujo y Usado**.  
@@ -122,7 +122,7 @@ El usuario puede **elegir X vehículos** (tipo + modelo + categoría), **generar
 
 ----
 
-# Reto 5 – Café Personalizado
+# ☕ Reto 5 – Café Personalizado
 
 ## 1) Resumen del reto
 La **Cafetería Creativa** permite a los clientes personalizar su café agregando **toppings, salsas y complementos**.  
@@ -165,17 +165,15 @@ El sistema debía permitir que se agregaran **nuevos toppings sin modificar la b
 
 
 
-
-
-
-
-### RETO #6: Habla con Soporte Técnico
+# 🛠️ RETO #6: Habla con Soporte Técnico
 ### Evidencias
 ![img_1.png](img_1.png)
 
 En este ejercicio utilizamos el patrón Chain of Responsibility, que se ve reflejado en la clase abstracta Technician, donde cada técnico decide si puede resolver un
 ticket; si no, lo pasa al siguiente con next.resolve(), con esto se permite que los tickets se procesen en cadena sin depender de un técnico específico.Se escogió 
 este patrón dado que el problema maneja distintos niveles y prioridades, por lo que debería ser flexible el escoger quién resuelve cada caso, dejando los que no puedan ser atendidos como pendientes para escalar.
+
+
 
 ## Preguntas Iniciales
 
