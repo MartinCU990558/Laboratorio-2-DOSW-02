@@ -28,3 +28,20 @@ en este caso serían los ingredientes y un compuesto de estos mismos que es la h
 A su vez, se podría decir que el ingrediente de la clase extra está usando un patrón de diseño
 Adapter porque adapta las entradas dinámicas del usuario a un objeto que encaje en la jerarquía de
 Ingredient.
+
+
+### reto 5: El cafe personalizado
+![img.png](docs/imagenes/reto5.png)
+
+- **Patron de Diseño:** Estructural
+- **Patron utilizado:** Composite
+- **Justificacion:** El patron Composite se utiliza para tratar objetos individuales y composiciones  de objetos de manera uniforme. En este caso, la clase Cafe actua como un composite que tiene una lista de objetos Topping
+- **Como lo aplicamos:** el patron se puede ver usado en la lista de Topping dentro de la clase Cafe, tambine que en el constructor de Cafe se itera Topping para conseguir el precio total del cafe y tambien que los toppings son instancias de subclases de Topping que actuan como hojas en la estructura composite
+
+### reto 6: El cafe personalizado
+![img.png](docs/imagenes/reto6.png)
+
+- **Patron de Diseño:** Comportamiento
+- **Patron utilizado:** Chain of responsability
+- **Justificacion:** Este patron se utiliza para procesar solicitudes a traves de una cadena de tecnicos. cada tecnico en la cadena tiene que decidir si puede o no resolver el ticket en su nivel de especialidad y prioridad maxima, si no puede entonces lo pasa al siguinete tecnico en la cadena.
+- **Como lo aplicamos:** En este reto se aplico definiendo TicketHandler con los metodos handleTicket y setNext, se implementa la clase de tecnico que implementa esta interfaz para posteriormente crear los tecnicos especifcos, por otra para el hecho de que cada tecnico pueda verificar si puede manejar el ticket o si debe de pasarselo al siguiente en linea, y por ultimo los tickets se procesan a traves de la cadena y logrando saber cual tecnico resolvio el ticket. 
