@@ -62,13 +62,14 @@ El usuario puede **elegir X vehículos** (tipo + modelo + categoría), **generar
 ---
 
 ## 4) Evidencias
-![Captura](docs/imagenes/Reto3.png)
+![Reto3.png](imagenes/Reto3.png)
+
 
 
 
 ### RETO #6: Habla con Soporte Técnico
 ### Evidencias
-![img_1.png](img_1.png)}
+![img_1.png](img_1.png)
 
 En este ejercicio utilizamos el patrón Chain of Responsibility, que se ve reflejado en la clase abstracta Technician, donde cada técnico decide si puede resolver un
 ticket; si no, lo pasa al siguiente con next.resolve(), con esto se permite que los tickets se procesen en cadena sin depender de un técnico específico.Se escogió 
