@@ -42,6 +42,5 @@ public class Reto1 {
 
         carrito.printReceipt();
 
-        scan.close();
     }
 }
