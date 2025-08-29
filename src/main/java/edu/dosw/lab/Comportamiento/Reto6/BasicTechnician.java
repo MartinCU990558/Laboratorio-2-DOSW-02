@@ -1,4 +1,4 @@
-package edu.dosw.lab.Comportamiento.reto6;
+package edu.dosw.lab.Comportamiento.Reto6;
 
 public class BasicTechnician extends Technician {
     public BasicTechnician() {
