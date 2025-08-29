@@ -90,7 +90,7 @@ public class Reto5 {
             case 6: {
                 System.out.print("Ingrese nombre del nuevo topping: ");
                 String nombre = sc.nextLine().trim();
-                System.out.print("Ingrese precio del topping (ej. 1800): ");
+                System.out.print("Ingrese precio del topping: ");
                 int precio = leerEntero(sc);
                 ToppingPersonalizado custom = new ToppingPersonalizado(cafe, nombre, precio);
                 return custom;

@@ -65,6 +65,53 @@ El usuario puede **elegir X vehículos** (tipo + modelo + categoría), **generar
 ![Reto3.png](imagenes/Reto3.png)
 
 
+----
+
+# Reto 5 – Café Personalizado
+
+## 1) Resumen del reto
+La **Cafetería Creativa** permite a los clientes personalizar su café agregando **toppings, salsas y complementos**.  
+Cada topping tiene un **precio adicional** y puede combinarse con otros.  
+El sistema debía permitir que se agregaran **nuevos toppings sin modificar la base del café**, cumpliendo con **POO, principios SOLID** y usando **Streams** para calcular el total cuando hay varios cafés.
+
+---
+
+## 2) Enfoque de solución (cómo se diseñó)
+- **Modelo POO:** se creó una **interfaz `Cafe`** con operaciones básicas: `obtenerDescripcion()` y `calcularCosto()`.  
+- **Componente base:** `CafeBase` representa el café simple, con un precio base fijo.  
+- **Decoradores:** cada topping (`Leche`, `Chocolate`, `Caramelo`, etc.) implementa la abstracción `DecoradorTopping` y agrega su propio precio + descripción.  
+- **Extensibilidad:** para nuevos toppings basta con crear una clase que extienda `DecoradorTopping` (cumple OCP). 
+
+
+## 3) Patrón de diseño
+
+**Patrón de Diseño (categoría):**  
+- **Estructurales**
+
+**Patrón Utilizado:**  
+- **Decorator**
+
+### Justificación
+- Permite añadir toppings a un café sin modificar la clase base.  
+- Cumple con el **Principio Abierto/Cerrado (OCP)** de SOLID: podemos añadir nuevos toppings creando nuevas clases, sin alterar el código existente.  
+- Cada topping es un **decorador** que envuelve un `Cafe`, extiende su descripción y aumenta el costo final.  
+
+### Cómo se aplica en el código
+- `Cafe` es la interfaz principal.  
+- `CafeBase` representa el café simple.  
+- `DecoradorTopping` es la clase abstracta que implementa `Cafe` y envuelve otro `Cafe`.  
+- Clases como `Leche`, `Chocolate`, `Caramelo`, `Menta` y `ToppingPersonalizado` implementan el patrón como **decoradores concretos**.  
+- `La clase Reto5 (main)` construye dinámicamente cada café según las elecciones del usuario y luego calcula el total con Streams.
+
+## 4) Evidencias
+![Reto5.png](imagenes/Reto5.png)
+
+---
+
+
+
+
+
 
 
 ### RETO #6: Habla con Soporte Técnico
