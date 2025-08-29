@@ -12,6 +12,23 @@
 
 ## Retos Completados
 
+## RETO #2: El chef de 5 estrellas
+### Evidencias
+![img.png](img.png)
+
+Para este ejercicio se aplicó el patrón Builder, dado que necesitabamos uno que nos permitiera construir objetos mediante un paso a paso. Se escogió este modelo porque una 
+hamburguesa puede tener diferentes combinaciones de ingredientes (pan, carne, queso, vegetales, salsas) y no todos son obligatorios, es decir no manejamos unos parametros especificos.
+La clase HamburgerBuilder agrega ingredientes de forma encadenada y luego genera el objeto final con build(), mientras que Hamburger 
+representa el producto completo y calcula el precio con streams. Así, el patrón se ve reflejado en la flexibilidad para 
+personalizar la hamburguesa y en la claridad del proceso de construcción.
+
+### RETO #6: Habla con Soporte Técnico
+### Evidencias
+![img_1.png](img_1.png)}
+
+En este ejercicio utilizamos el patrón Chain of Responsibility, que se ve reflejado en la clase abstracta Technician, donde cada técnico decide si puede resolver un
+ticket; si no, lo pasa al siguiente con next.resolve(), con esto se permite que los tickets se procesen en cadena sin depender de un técnico específico.Se escogió 
+este patrón dado que el problema maneja distintos niveles y prioridades, por lo que debería ser flexible el escoger quién resuelve cada caso, dejando los que no puedan ser atendidos como pendientes para escalar.
 
 ## Preguntas Iniciales
 
