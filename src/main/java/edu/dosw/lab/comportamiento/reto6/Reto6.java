@@ -1,4 +1,4 @@
-package edu.dosw.lab.comportamiento.reto5;
+package edu.dosw.lab.comportamiento.reto6;
 
 import java.util.stream.Collectors;
 import java.util.ArrayList;
