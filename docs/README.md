@@ -52,6 +52,7 @@
     El pom.xml es un archivo que funciona como los planos del proyecto este contiene toda la información necesaria para que maven sea capaz de saber que construir, como construirlo y de que librerias externas necesitaría y se usa principalmente para gestionar dependencias  para simplemente  declarar la dependencia en el pom.xml con su groupId, artifactId y version.
 
 
+
 7. **¿Qué diferencia hay entre mvn compile, mvn package y mvn install?**
 
     el mvn compile únicamente compila, mientras que el mvn package adicionalmente puede ejecutar tests y crear el JAR, y por último el mvn install permite todo lo anterior pero adicionalmente lo instala localmente  por lo que resumidamente se usarian de la siguiente manera>
