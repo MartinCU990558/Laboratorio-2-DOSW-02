@@ -126,13 +126,45 @@ El usuario puede **elegir X vehículos** (tipo + modelo + categoría), **generar
 
 ## 1) Resumen del reto
 
+El proyecto consiste en desarrollar un sistema de conversión de divisas para una casa de cambio que necesita actualizar su sistema de tasas de cambio. El objetivo es reemplazar un sistema anterior que utilizaba una tasa fija para todas las conversiones, implementando ahora un sistema que maneje tasas de cambio reales entre diferentes monedas (USD, EUR, JPY, COP).
+
 ## 2) Enfoque de solución
+
+Se desarrolló una solución que permite:
+- Procesar múltiples transacciones de cambio de divisas
+- Convertir desde cualquier moneda soportada a múltiples monedas destino
+- Mostrar resultados individuales por transacción
+- Calcular y mostrar totales agrupados por tipo de moneda
+- Manejar las conversiones utilizando tasas de cambio específicas para cada par de monedas
 
 ## 3) Patrones de diseño
 
+### Categoría
+Patrones de Comportamiento
+
+### Patrón Utilizado
+Strategy
+
 ### Justificación
 
+Se eligió el patrón Strategy porque:
+- Permite encapsular diferentes algoritmos de conversión de moneda
+- Facilita la adición de nuevas monedas sin modificar el código existente
+- Cada moneda puede implementar su propia lógica de conversión
+- Permite intercambiar las estrategias de conversión en tiempo de ejecución
+
 ### Cómo se aplica en el código
+
+1. Se define una clase abstracta `Moneda` que actúa como la estrategia base
+2. Cada tipo de moneda (USD, EUR, JPY, COP) implementa su propia estrategia de conversión
+3. La clase `Transaccion` utiliza estas estrategias para realizar las conversiones
+4. El sistema selecciona dinámicamente la estrategia apropiada según la moneda de origen y destino
+
+La implementación permite:
+- Desacoplar los algoritmos de conversión del código que los utiliza
+- Mantener el código limpio y organizado
+- Facilitar la extensibilidad para agregar nuevas monedas
+- Cumplir con el principio Open/Closed de SOLID
 
 ## 4) Evidencias
 
