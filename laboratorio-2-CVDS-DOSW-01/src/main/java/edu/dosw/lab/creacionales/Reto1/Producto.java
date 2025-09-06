@@ -1,7 +1,7 @@
 package edu.dosw.lab.creacionales.Reto1;
 public class Producto {
     private String nombre;
-    private double precio;
+    private final double precio;
 
     public Producto(String nombre, double precio){
         this.nombre = nombre;

@@ -12,11 +12,12 @@ public class Application {
 
     public static void main(String[] args) {
         System.out.println("Proyecto de Maven configurado y ejecutado correctamente");
+        reto1.iniciarPrograma();
+        Reto2.iniciarPrograma();
+        
+        Reto3.iniciarPrograma();
         reto7.iniciarPrograma();
         reto6.iniciarPrograma();
-        reto1.iniciarPrograma();
-        Reto3.iniciarPrograma();
-        Reto2.iniciarPrograma();
         Reto4.iniciarPrograma();
         Reto5.iniciarPrograma();
     }
